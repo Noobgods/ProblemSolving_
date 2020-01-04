@@ -1,0 +1,14 @@
+ https://www.crocus.co.kr/613
+ 맨버 마이어스 알고리즘 (Manber-Myers Algorithm)
+ : O(nlog^2n) 으로 동작하는 suffix array를 구하기 위한 알고리즘
+ 
+첫 1,2,4,8 ... 2^n 글자를 기준으로 정렬하는 방식
+log n 번의 정렬 후 원하는 접미사 배열을 얻는다.
+
+banana | a       ]         |  a       ] a 기준   |  a       ] a
+anana  | ana     ] a 기준  |  ana     }          |  ana     ] ana
+nana   | anana   ]         |  anana   } an 기준  |  anana   ] anan
+ana    | banana  } b 기준  |  banana  ) ba 기준  |  banana  ] bana
+na     | nana    )         |  nana    ]          |  na      ] na
+a      | na      ) n 기준  |  na      ] na 기준  |  nana    ] nana
+

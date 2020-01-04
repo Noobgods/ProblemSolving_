@@ -1,0 +1,20 @@
+{
+    "editor.fontFamily": "\"D2Coding\"",
+    "files.associations": {
+        "cmath": "cpp",
+        "cstdio": "cpp",
+        "iostream": "cpp",
+        "stack": "cpp",
+        "*.tcc": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "tuple": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "unordered_map": "cpp",
+        "system_error": "cpp"
+    },
+    "files.encoding": "euckr",
+    "files.autoGuessEncoding": true
+}
