@@ -1,4 +1,4 @@
-#include<cstdio>	// 2676 ¶ó½ºÄ®»ï°¢Çü [¼öÇĞ]
+#include<cstdio>	// 2676 ë¼ìŠ¤ì¹¼ì‚¼ê°í˜• [ìˆ˜í•™]
 int T;
 int main(){
 	for(scanf("%d", &T); T--;){

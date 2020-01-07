@@ -1,4 +1,4 @@
-#include<cstdio>    // 3046_R2 [¼öÇÐ]
+#include<cstdio>    // 3046_R2 [ìˆ˜í•™]
 int A,B,V;
 int main(){
     scanf("%d %d %d",&A, &B, &V);
