@@ -1,27 +1,17 @@
-#include<cstdio>    //  [수학]
-
-int N,K;
-int gcd(int m, int n){
-    int r;
-    while(1){
-        r = m%n;
-        if(r == 0 ) return n;
-        else {
-            m = n;
-            n = r;
-        }
-    } 
-}    
+#include<cstdio>    // 3036_링 [수학]
+#include<list>
+#include<algorithm>
+using namespace std;
+int N, K;
+bool R[1001];
+int f(int x){
+}
 int main(){
-    scanf("%d %d",&N, &K);
-    int i, j;
-    if(N<K){
-        int t = N;
-        N = K;
-        K = t;
+    scanf("%", &N);
+
+    for(int i=0;i<N;i++){
+        scanf("%d", &R[i]);
     }
 
-    for(j=1; (N*j)%K !=0;j++);
-    printf("%d\n%d", K/i, N*j);
-    return 0;
+	return 0;
 }

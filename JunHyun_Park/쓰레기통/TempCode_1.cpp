@@ -1,32 +1,47 @@
-#include<cstdio> // 15897_잘못구현한에라토스테네스의체
-long long int N,S;
-int main(){
-	int i,j=1, k_1=1, k_2=1;
-	scanf("%d", &N);
-	S = 0;
-	for(i=1; i*i<N; i++){
-		if(N%2){
-			if(N%i == 0 && (N+1)%i ==0){
-				S += (N+1)/i * k_1;
-				k_1=1;
-				S += ()
-				k_2= i;
-			}
-		}
-		else{
-			if(N%i == 0){
-				S += N/i * k_1;
-				k_1=1;
-			}
-			else if((N-1)%i ==0){
-				printf("+ (%d *%d)", (N/i+1), k_1);
-				S += (N/i+1) * k_1;
-
-				k_1=1;
-			}
-		}
-		k_1++;
-	}
-	printf("%d", S);
-	return 0;
+#include <cstdio>	// 1019 책 페이지
+#define ll  long long
+ 
+ll start, finish, temp;
+int answer[10];
+ 
+void sol(int n) {
+    for (int j = n; j > 0; j/=10) {
+        answer[j%10] += temp;
+    }
+}
+ 
+int main(int argc, char const *argv[]) {
+    start = 1;
+    temp = 1;
+    scanf("%d",&finish);
+    
+    while (start <= finish) {
+        while (start % 10 != 0 && start <= finish) {
+            sol(start);
+            start++;
+        }
+    
+        if (start > finish) {
+            break;
+        }
+    
+        while (finish % 10 != 9 && start <= finish) {
+            sol(finish);
+            finish--;
+        }
+    
+        ll cnt = (finish/10) - (start/10) + 1;
+        for (int i = 0; i < 10; i++) {
+            answer[i] += cnt * temp;
+        }
+    
+        start /= 10;
+        finish /= 10;
+        temp *= 10LL;
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        printf("%d ",answer[i]);
+    }
+    return 0;
 }

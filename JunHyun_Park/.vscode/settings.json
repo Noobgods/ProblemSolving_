@@ -13,7 +13,11 @@
         "string": "cpp",
         "vector": "cpp",
         "unordered_map": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "array": "cpp",
+        "list": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp"
     },
     "files.encoding": "euckr",
     "files.autoGuessEncoding": true
