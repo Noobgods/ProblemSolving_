@@ -1,23 +1,70 @@
-#include<cstdio>    // 12842_®°?°æ?®˘?®¨¢¨°§? [°æ¢¨??]
-int n, s, m, i, me[100000][2], es;
-int main() {
-	scanf("%d %d %d ", &n, &s, &m);
+#include<cstdio>	// 12100_2048(Easy) [Î∏åÎ£®Ìä∏Ìè¨Ïä§],[Íµ¨ÌòÑ]
+int N, S;
+int A[21][21],T[21][21];
 
-	for (i = 0; i < m; i++) {
-		scanf("%d", &me[i][0]);
-		me[i][1] = me[i][0];
-	}
-
-	for (es = 0; es < n - s;) {
-		for (i = 0; i < m;) {
-			if (me[i][0] == me[i][1]) {
-				es++;
-				me[i][1] = 0;
+void mergeRight(){
+	for(int i=0; i<N; i++){
+		for(int j=0; j<N-1; j++){
+			if(A[i][j] == A[i][j+1]){
+				A[i][j+1]*=2;
+				A[i][j]=0;
 			}
-			else me[i++][1]++;
-			if (es >= n - s) break;
+			if(A[i][j] && A[i][j+1] == 0){
+				A[i][j+1] = A[i][j];
+			}
 		}
 	}
-	printf("%d", i + 1);
+}
+void mergeLeft(){
+	for(int i=0; i<N; i++){
+		for(int j=N-1; j>0; j--){
+			if(A[i][j] == A[i][j-1]){
+				A[i][j-1]*=2;
+				A[i][j]=0;
+			}
+			if(A[i][j] && A[i][j-1] == 0){
+				A[i][j-1] = A[i][j];
+			}
+		}
+	}
+}
+void mergeDown(){
+	for(int i=0; i<N; i++){
+		for(int j=0; j<N-1; j++){
+			if(A[j][i] == A[j+1][i]){
+				A[j+1][i]*=2;
+				A[j][i]=0;
+			}
+			if(A[j][i] && A[j+1][i] == 0){
+				A[j+1][i] = A[j][i];
+			}
+		}
+	}
+}
+void mergeUp(){
+	for(int i=0; i<N; i++){
+		for(int j=N-1; j>0; j++){
+			if(A[j][i] == A[j-1][i]){
+				A[j-1][i]*=2;
+				A[j][i]=0;
+			}
+			if(A[j][i] && A[j-1][i] == 0){
+				A[j-1][i] = A[j][i];
+			}
+		}
+	}
+}
+void f(int x){
+	
+}
+int main(){
+	scanf("%d",&N);
+
+	for(int i=0; i<N; i++){
+		for(int j=0; j<N; j++){
+			scanf("%d",&T[i][j]);
+		}
+	}
+	
 	return 0;
 }

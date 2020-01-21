@@ -15,10 +15,9 @@ https://www.acmicpc.net/problem/10809
 https://www.acmicpc.net/problem/10870
 
 7
-AAAAB
-ABABA
-AAAABB
-ABAXXX
-AAAB
-AAB
-AAAAABB
+2
+3
+4
+5
+6
+7

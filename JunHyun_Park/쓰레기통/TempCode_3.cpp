@@ -1,53 +1,36 @@
-#include<cstdio>
-#include<string>
-#include<vector>
+﻿#include<cstdio>    // 2610_회의준비
+#include<algorithm>
+#include<cstring>
 using namespace std;
 
-char C[60],N;
-int n_o;
-vector<bool> O;
-vector<int> A;
+int N,M, Table[102][102], check[101];
+
 int main(){
-    scanf("%s",C);    
-    int i=0, k=-1;
+    scanf("%d %d", &N, &M);
 
-    do{
-        if(C[i] < '0' && k != -1) {
-            char n[10] = {0,};
-            for(int j=0; j<i-k; j++)
-                n[j] = C[k+j];
-            A.push_back(atoi(n));
-            k = -1;
-            if(C[i] == '+'){O.push_back(true);}
-            if(C[i] == '-'){O.push_back(false);}
-        }
-        else if(k == -1){
-            k = i;
-        }
-    }while(C[i++] != '\0' || k !=-1);
-    
-    vector<int>::iterator iter = A.begin();
-    vector<bool>::iterator O_iter = O.begin();
-    k = 0;
-    for(int i=0;O[i]!=O.size();){
-        if(O[i]){
-            A[i] += A[i+1];
-            iter += i+1;
-            O_iter += i;
-            k++;
-            A.erase(iter);
-            O.erase(O_iter);
-            printf("%d %d\n" ,A[i], i);
-        }
-        else i++;
+    memset(Table, 1, sizeof(Table));
+    for(int i=0; i<M; i++){
+        int x, y;
+        scanf("%d %d", &x, &y);
+        Table[x][y] = 1;
+        Table[y][x] = 1;
     }
 
-    int R = 2*A[0];
-    for(auto v : A){
-        R -= v;
-        printf("%d ",v);
+    for(int i=1; i<=N; i++){
+        Table[i][i] = 1;
+        for(int j=1; j<=N; j++){
+            for(int k=1; k<=N; k++){
+                if(Table[i][k] + Table[k][j] < Table[i][j])
+                   Table[i][j] = Table[i][k] + Table[k][j];
+            }
+        }
     }
 
-    printf("%d", R);
-    return 0;
+    for(int i=1; i<=N; i++){
+        for(int j= 1; j<=N; j++){
+            printf("%d ", Table[i][j]);
+        }
+        printf("\n");
+    }
+	return 0;
 }
