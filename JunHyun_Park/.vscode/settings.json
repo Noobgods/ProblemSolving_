@@ -17,7 +17,9 @@
         "array": "cpp",
         "list": "cpp",
         "string_view": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "algorithm": "cpp",
+        "cstring": "cpp"
     },
     "files.encoding": "euckr",
     "files.autoGuessEncoding": true

@@ -1,4 +1,4 @@
-#include<cstdio>	// 
+#include<cstdio>	// 1012_유기농배추 [백트래킹]
 int N,M,K, T, d[4][2] = {{1,0},{0,1},{-1,0},{0,-1}};
 bool A[51][51];
 void f(int x, int y){

@@ -1,4 +1,4 @@
-#include<cstdio>    // 1002_ÅÍ·¿ [¼öÇÐ]
+#include<cstdio>    // 1002_í„°ë › [ìˆ˜í•™]
 #include<math.h>
 
 int R,T, Ax, Ay, Ar, Bx, By, Br;

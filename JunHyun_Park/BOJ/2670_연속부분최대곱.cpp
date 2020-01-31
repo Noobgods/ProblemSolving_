@@ -1,20 +1,23 @@
-#include<cstdio>	// 2670_연속부분최대곱 [구현]
-int N, S;
-bool A[102][102];
+#include<cstdio>	// 2670_연속부분최대곱 [DP]
+#include<math.h>
+int N;
+double A[10000], DP[10000];
 int main(){
-    for(int m=0; m++<4;){
-		int x, y, dx, dy;
-		scanf("%d %d %d %d",&x, &y, &dx, &dy);
-		for(int i=x; i<dx; i++){
-			for(int j=y; j<dy; j++){
-				if(!A[i][j]) A[i][j] = true;
-			}
-		}
+	scanf("%d",&N);
+	for(int i=0;i<N; i++){
+		scanf("%lf", &A[i]);
 	}
-	for(int i=0; i<=100; i++)
-		for(int j=0; j<=100; j++)
-			if(A[i][j]) S++;
-	
-	printf("%d",S);
+
+	DP[0] = A[0];
+	for(int i=1; i<N; i++){
+		if(DP[i-1]*A[i] > A[i])
+			DP[i] = DP[i-1]*A[i];
+		else
+			DP[i] = A[i];
+	}
+	int idx = 0; 
+	for(int i=1; i<N; i++)
+		if(DP[idx] < DP[i]) idx = i;
+	printf("%.3lf", round(DP[idx]*1000)/1000);
 	return 0;
 }
