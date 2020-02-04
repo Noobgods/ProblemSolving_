@@ -4,59 +4,81 @@
 #include <math.h>
 using namespace std;
 
-#define MAX_V 123456789.0f
+bool omino[2][2] = {{1,1},{1,1}};
+bool imino[1][4] = {1,1,1,1};
+bool zmino[2][3] = {{1,1,0},{0,1,1}};
+bool lmino[2][3] = {{1,1,1},{0,0,1}};
+bool tmino[2][3] = {{1,1,1},{0,1,0}};
+int main(){
 
-
-long long rangeSum(const vector<long long> & psum, int a, int b)
-{
-	if (a == 0) return psum[b];
-	return psum[b] - psum[a - 1];
-}
-
-long double standardDeviation(const vector<long long> &sqpsum, const vector<long long> &psum, int a, int b)
-{
-	long double mean = rangeSum(psum, a, b) / static_cast<long double>(b - a + 1);
-	long double ret = rangeSum(sqpsum, a, b) - 2 * mean * rangeSum(psum, a, b) + (b - a + 1) * mean * mean;
-	long double variance = ret / (b - a + 1);
-	return sqrt(variance);
-}
-
-int main()
-{
-	int nrDoll, minSub;
-	cin >> nrDoll >> minSub;
-
-	vector<long long> subsumList;
-	vector<long long> sqSubsumList;
-
-	int tmp;
-	long long sum = 0;
-	long long sqSum = 0;
-	for (int i = 0; i < nrDoll; i++)
-	{
-		cin >> tmp;
-		sum += tmp;
-		sqSum += static_cast<long long>(tmp) * tmp;
-
-		subsumList.push_back(sum); // 각 원소 의 부분합 , 제곱의 부분합을 미리 계산
-		sqSubsumList.push_back(sqSum);
-	}
-	long double min_v = MAX_V;
-    // 모든 sub 구간을 탐색하면서 표준편차를 계산한다
-	for (int s = 0; s < nrDoll; s++)
-	{
-		for (int e = s + minSub - 1; e < nrDoll; e++)
-		{
-            long double V =standardDeviation(sqSubsumList, subsumList, s, e);
-			min_v = min(min_v, V);
-            cout << V << " ";
+	int A[2][3] = {{1,1,1}, {1,1,1}};
+	int x=0, y=0;
+	/*
+	for(int i=0; i<3; i++){
+		for(int j=0; j<2; j++){
+			if(A[x+j][y+i] * lmino[j][i] == 1)
+				printf("O");
+			else printf(" ");
 		}
-        cout<<endl;
+		printf("\n");
 	}
-
-	cout.setf(ios::fixed);
-	cout.precision(11);
-	cout << min_v << endl;
+	for(int i=0; i<3; i++){
+		for(int j=0; j<2; j++){
+			if(A[x+j][y+2-i] * lmino[j][2-i] == 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	for(int i=0; i<3; i++){
+		for(int j=0; j<2; j++){
+			if( A[x+1-j][y+i] * lmino[1-j][i]== 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	for(int i=0; i<3; i++){
+		for(int j=0; j<2; j++){
+			if(A[x+1-j][y+2-i] * lmino[1-j][2-i]== 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+		*/
+	for(int i=0; i<2; i++){
+		for(int j=0; j<3; j++){
+			if(A[x+i][y+j] * lmino[i][j] == 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	for(int i=0; i<2; i++){
+		for(int j=0; j<3; j++){
+			if( A[x+i][y+2-j] * lmino[i][2-j] == 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	for(int i=0; i<2; i++){
+		for(int j=0; j<3; j++){
+			if( A[x+1-i][y+j] * lmino[1-i][j]== 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	for(int i=0; i<2; i++){
+		for(int j=0; j<3; j++){
+			if(A[x+1-i][y+2-j] * lmino[1-i][2-j]== 1)
+				printf("O");
+			else printf(" ");
+		}
+		printf("\n");
+	}
 	return 0;
 }
 
