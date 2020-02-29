@@ -16,5 +16,6 @@ int main(){
 
     scanf("%d %d", &m, &n);
 
+    for(int )
     printf("%d %d", gcd(m,n), lcm(m,n));
 }
