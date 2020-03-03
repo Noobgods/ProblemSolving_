@@ -1,4 +1,4 @@
-#include<cstdio>    // 1914_하노이탑 [재귀], [구현]
+#include<cstdio>    // 1914_하노이탑 [재귀], [구현], [분할정복]
 #define upper(x) x>3?1:x
 #define lower(x) x<1?3:x
 
