@@ -1,58 +1,32 @@
-#include <stdio.h>
- 
-#define INT_MAX 2147483647
-#define TRUE 1
-#define FALSE 0
-#define MAX_VERTICES 20001
-#define INF 1000 
- 
-int weight[MAX_VERTICES][MAX_VERTICES];
-int distance[MAX_VERTICES]; 
-int found[MAX_VERTICES];
- 
-int choose(int distance[], int n, int found[]){
-  int i, min, minpos;
-  min = INT_MAX;
-  minpos = -1;
- 
-  for (i = 0; i < n; i++) {
-    if (distance[i] < min && found[i] == FALSE) {
-      min = distance[i];
- 
-      minpos = i;
-    }
-  }
-  return minpos;
+#include<cstdio>
+using namespace std;
+#define max(x,y) x>y?x:y
+int A[100000],N;
+long long int R;
+long long int leftsplit(int n, int s){
+    if(n < 0 || s > A[n]) return 0;
+    else return leftsplit(n-1, s)+ s;
 }
- 
-void shortest_path(int start, int n) {
-  int u;
- 
-  for (int i = 0; i < n; i++){
-    distance[i] = weight[start][i];
- 
-    found[i] = FALSE;
-  }
+long long int rightsplit(int n, int s){
+    if(n >= N || s > A[n]) return 0;
+    else return rightsplit(n+1, s)+ s;
+}
+long long int split(int n){
+    return leftsplit(n-1, A[n]) + rightsplit(n+1, A[n]) + A[n];
+}
+int main(){
+    for(;;){
+        scanf("%d", &N);
+        int i;
+        for(i=0; i<N; i++)
+            scanf("%d",&A[i]);
+        
+        if(i==0) break;
 
-  found[start] = TRUE;
-  distance[start] = TRUE;
- 
-  for (int i = 0; i < n - 1; i++) {
-    u = choose(distance, n, found);
-    found[u] = TRUE;
- 
-    for (int w = 0; w < n; w++) {
-      if (found[w] == FALSE) {
-        if (distance[u] + weight[u][w] < distance[w]) {
-          distance[w] = distance[u] + weight[u][w];
-        }
-      }
+        R = 0;
+        for(i=0; i<N; i++)
+            R = max(R, split(i));
+        
+        printf("%d\n",R);
     }
-  }
-}
- 
-void main(){
-    int N;
-    scanf("%d", &N);
-    shortest_path(0, N);
 }

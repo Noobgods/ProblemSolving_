@@ -54,7 +54,7 @@ public:
             str[i]= s.str[i];
         return *this;
     }
-    // 이동 연산자
+    // 이동 연산자 (move Semantics)
     atring& operator=(atring &&s){
         cout<<"[+] move ! "<<endl;
         str = s.str;
