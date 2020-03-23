@@ -1,25 +1,25 @@
-#include<iostream>  // 8. ÀÌµ¿ ½Ã¸àÆ½ 
+#include<iostream>  // 8. ì´ë™ ì‹œë©˜í‹± 
 #include<cstring>
 using namespace std;
 
 /* Move Sematics
-    C++11 ¿¡¼­ Ãß°¡µÈ ¹®¹ý. °´Ã¼ÀÇ ¸Þ¸ð¸® ¼ÒÀ¯±ÇÀ» ÀÌÀüÇÏ´Â ¹æ½ÄÀÇ ¹®¹ý 
-    ±âÁ¸ÀÇ C++¿¡¼­ »ç¿ëµÈ Copy semantics (º¹»ç ½Ã¸àÆ½)Àº ¶§¶§·Î ºÒÇÊ¿äÇÑ º¹»ç¶§¹®¿¡ º¸ÀÌÁö ¾Ê´Â ¼º´É ÀúÇÏÀÇ ¿øÀÎÀÌ µÇ¾ú´Ù.
-    µ¥ÀÌÅÍ º¹Á¦ ¶Ç´Â ´ëÀÔÀÌ ³¡³­ ÈÄ µ¥ÀÌÅÍ ¼Ò¸ê½Ã Move Semantics¸¦ »ç¿ëÇÑ´Ù¸é ¾èÀº º¹»ç¸¦ ÇØµµ ¸Þ¸ð¸®ÀÇ ¼ÒÀ¯±Ç ÀÌÀüÀÌ±â ¶§¹®¿¡ ºñ¿ëÀÌ ¹ß»ýÇÏÁö ¾ÊÀ½
+    C++11 ì—ì„œ ì¶”ê°€ëœ ë¬¸ë²•. ê°ì²´ì˜ ë©”ëª¨ë¦¬ ì†Œìœ ê¶Œì„ ì´ì „í•˜ëŠ” ë°©ì‹ì˜ ë¬¸ë²• 
+    ê¸°ì¡´ì˜ C++ì—ì„œ ì‚¬ìš©ëœ Copy semantics (ë³µì‚¬ ì‹œë©˜í‹±)ì€ ë•Œë•Œë¡œ ë¶ˆí•„ìš”í•œ ë³µì‚¬ë•Œë¬¸ì— ë³´ì´ì§€ ì•ŠëŠ” ì„±ëŠ¥ ì €í•˜ì˜ ì›ì¸ì´ ë˜ì—ˆë‹¤.
+    ë°ì´í„° ë³µì œ ë˜ëŠ” ëŒ€ìž…ì´ ëë‚œ í›„ ë°ì´í„° ì†Œë©¸ì‹œ Move Semanticsë¥¼ ì‚¬ìš©í•œë‹¤ë©´ ì–•ì€ ë³µì‚¬ë¥¼ í•´ë„ ë©”ëª¨ë¦¬ì˜ ì†Œìœ ê¶Œ ì´ì „ì´ê¸° ë•Œë¬¸ì— ë¹„ìš©ì´ ë°œìƒí•˜ì§€ ì•ŠìŒ
 
     Class A = B;
-    À§Ã³·³ »ç¿ë½Ã µðÆúÆ® º¹»ç»ý¼ºÀÚ¸¦ ÄÄÆÄÀÏ·¯°¡ »ý¼ºÇØÁÜ
-    µðÆúÆ® º¹»ç»ý¼ºÀÚÀÇ ¹®Á¦ -> ¾èÀº º¹»ç
+    ìœ„ì²˜ëŸ¼ ì‚¬ìš©ì‹œ ë””í´íŠ¸ ë³µì‚¬ìƒì„±ìžë¥¼ ì»´íŒŒì¼ëŸ¬ê°€ ìƒì„±í•´ì¤Œ
+    ë””í´íŠ¸ ë³µì‚¬ìƒì„±ìžì˜ ë¬¸ì œ -> ì–•ì€ ë³µì‚¬
 
-    swappingÀ» ÇÏ°ÔµÇ¸é ºÒÇÊ¿äÇÑ º¹»ç¿¬»êÀÌ ¸Å¿ì ¸¹ÀÌ ¹ß»ý
+    swappingì„ í•˜ê²Œë˜ë©´ ë¶ˆí•„ìš”í•œ ë³µì‚¬ì—°ì‚°ì´ ë§¤ìš° ë§Žì´ ë°œìƒ
 
-    Move semantics ´Â ÀÌ¶§ »ç¿ëÇÏ¸ç R-Value(ÀÓ½Ã°´Ã¼)ÀÇ ÀÌµ¿À» ÀÌ¿ë
+    Move semantics ëŠ” ì´ë•Œ ì‚¬ìš©í•˜ë©° R-Value(ìž„ì‹œê°ì²´)ì˜ ì´ë™ì„ ì´ìš©
 
-    ÀÌµ¿ ¿¬»êÀ» ÇÑ °´Ã¼´Â ºó »óÅÂÀÌ¹Ç·Î Àç»ç¿ëÇØ¼­´Â Àý´ë ¾ÈµÈ´Ù.
+    ì´ë™ ì—°ì‚°ì„ í•œ ê°ì²´ëŠ” ë¹ˆ ìƒíƒœì´ë¯€ë¡œ ìž¬ì‚¬ìš©í•´ì„œëŠ” ì ˆëŒ€ ì•ˆëœë‹¤.
 
-    Copy Semantics ¿Í Move SemanticsÀÇ °¡Àå Å« Â÷ÀÌÁ¡Àº
-    Copy Semantics´Â ±íÀº º¹»ç¸¦ ÅëÇØ ¿øº»°ú ¶È°°Àº °´Ã¼¸¦ »ý¼ºÇØ º¹»çÇÏ¹Ç·Î ¸Þ¸ð¸® ³¶ºñ°¡ ½ÉÇÏ°í
-    Move Semantics´Â ¸Þ¸ð¸® ¼ÒÀ¯±Ç ÀÌÀüÀ» ÅëÇØ ¾èÀº º¹»ç¸¦ ÇÏ°í ¿øº»À» NULL·Î ÃÊ±âÈ­ ÇÏ´Â °Í.
+    Copy Semantics ì™€ Move Semanticsì˜ ê°€ìž¥ í° ì°¨ì´ì ì€
+    Copy SemanticsëŠ” ê¹Šì€ ë³µì‚¬ë¥¼ í†µí•´ ì›ë³¸ê³¼ ë˜‘ê°™ì€ ê°ì²´ë¥¼ ìƒì„±í•´ ë³µì‚¬í•˜ë¯€ë¡œ ë©”ëª¨ë¦¬ ë‚­ë¹„ê°€ ì‹¬í•˜ê³ 
+    Move SemanticsëŠ” ë©”ëª¨ë¦¬ ì†Œìœ ê¶Œ ì´ì „ì„ í†µí•´ ì–•ì€ ë³µì‚¬ë¥¼ í•˜ê³  ì›ë³¸ì„ NULLë¡œ ì´ˆê¸°í™” í•˜ëŠ” ê²ƒ.
 */
 
 class atring{
@@ -41,7 +41,7 @@ public:
         for(int i= 0; i!=len; i++)
             str[i] = s[i];
     }
-    // º¹»ç ¿¬»êÀÚ
+    // ë³µì‚¬ ì—°ì‚°ìž
     atring& operator=(atring &s){
         cout << "[+] copy ! " << endl;
         if(s.len > capacity){
@@ -54,7 +54,7 @@ public:
             str[i]= s.str[i];
         return *this;
     }
-    // ÀÌµ¿ ¿¬»êÀÚ (move Semantics)
+    // ì´ë™ ì—°ì‚°ìž (move Semantics)
     atring& operator=(atring &&s){
         cout<<"[+] move ! "<<endl;
         str = s.str;
@@ -102,7 +102,7 @@ void awap(T &a, T &b){
     a = move(b);
     b = move(tmp);
 
-    // ¾Æ·¡¿Í °°ÀÌ swap ¿¬»êÀ» ½Ç½Ã ÇÑ´Ù¸é Copy Semantics¿¡ ÀÇÇØ ºÒÇÊ¿äÇÑ º¹»ç°¡ ¹ß»ýÇÑ´Ù.
+    // ì•„ëž˜ì™€ ê°™ì´ swap ì—°ì‚°ì„ ì‹¤ì‹œ í•œë‹¤ë©´ Copy Semanticsì— ì˜í•´ ë¶ˆí•„ìš”í•œ ë³µì‚¬ê°€ ë°œìƒí•œë‹¤.
     /* T tmp(a);
     a = b;
     b = tmp;*/

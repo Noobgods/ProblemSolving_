@@ -1,4 +1,4 @@
-#include<iostream>	// ¸ğ´ø C++ 3.À¯´ÏÆû ÃÊ±âÈ­
+#include<iostream>	// ëª¨ë˜ C++ 3.ìœ ë‹ˆí¼ ì´ˆê¸°í™”
 #include<cstdio>
 #include<string>
 #include<vector>
@@ -17,52 +17,52 @@ public:
 	Book(const string& name, int cost) : name(name), cost(cost){}
 };
 
-// ÇÔ¼ö ¸®ÅÏ°ªÀ¸·Î »ç¿ë
+// í•¨ìˆ˜ ë¦¬í„´ê°’ìœ¼ë¡œ ì‚¬ìš©
 vector<int> return_func(){
 	return {1,2,3};
 }
 
-// ÇÔ¼ö ÀÎÀÚ·Î »ç¿ë
+// í•¨ìˆ˜ ì¸ìë¡œ ì‚¬ìš©
 void parameter_func(vector<int> v){
 	for(auto i : v) cout<<i<<" ";
 	cout<<endl;
 }
 
 int main(){
-	// 5·Î ÃÊ±âÈ­
+	// 5ë¡œ ì´ˆê¸°í™”
 	int v1{5};
 	printf("v1: %d \n",v1);
 
-	// ¹è¿­ 1,2,3 À¸·Î ÃÊ±âÈ­
+	// ë°°ì—´ 1,2,3 ìœ¼ë¡œ ì´ˆê¸°í™”
 	int v2[]{1,2,3};
 	printf("v2 [0]:%d [1]:%d [2]:%d\n",v2[0], v2[1], v2[2]);
 
-	// vector Å¬·¡½º 1,2,3 À¸·Î ÃÊ±âÈ­
+	// vector í´ë˜ìŠ¤ 1,2,3 ìœ¼ë¡œ ì´ˆê¸°í™”
 	vector<int> v3{1,2,3};
 	printf("v3 [0]:%d [1]:%d [2]:%d\n", v3[0], v3[1], v3[2]);
 
-	// vector Å¬·¡½º pairÃÊ±âÈ­ {1, '1'}, {2, 'b'}
+	// vector í´ë˜ìŠ¤ pairì´ˆê¸°í™” {1, '1'}, {2, 'b'}
 	vector<pair<int, string>> v4{{1, "1"}, {2,"b"}};
 	printf("v4 [0]%d %s [1]%d %s \n", v4[0].first, v4[0].second.c_str(), v4[1].first, v4[1].second.c_str());
 
-	// Å¬·¡½º ÃÊ±âÈ­
+	// í´ë˜ìŠ¤ ì´ˆê¸°í™”
 	Car car{50, 20};
 	printf("Car cost[%d] oil[%d]\n", car.cost, car.oil);
 
-	// vector Å¬·¡½º ÅÛÇÃ¸´ Å¬·¡½º·Î ÃÊ±âÈ­
+	// vector í´ë˜ìŠ¤ í…œí”Œë¦¿ í´ë˜ìŠ¤ë¡œ ì´ˆê¸°í™”
 	vector<Book> book{{"a", 100}, {"b", 200}};
 	printf("Book [0](%s,%d) [1](%s,%d)\n", book[0].name.c_str(), book[0].cost, book[1].name.c_str(), book[1].cost);
 
-	// ÀÌ¸§¾ø´Â ÀÓ½Ãº¯¼ö ÃÊ±âÈ­
+	// ì´ë¦„ì—†ëŠ” ì„ì‹œë³€ìˆ˜ ì´ˆê¸°í™”
 	vector<int> {1,2,3};
 
-	// µ¿ÀûÇÒ´ç
+	// ë™ì í• ë‹¹
 	int * v = new int[3]{1,2,3};
 
-	// ÇÔ¼ö ¸®ÅÏ°ª ÃÊ±âÈ­¸¦ ¹ŞÀ½
+	// í•¨ìˆ˜ ë¦¬í„´ê°’ ì´ˆê¸°í™”ë¥¼ ë°›ìŒ
 	vector<int> v = return_func();
 
-	// ÇÔ¼ö ÀÎÀÚ·Î »ç¿ë
+	// í•¨ìˆ˜ ì¸ìë¡œ ì‚¬ìš©
 	parameter_func({1,2,3});
 
 	return 0;

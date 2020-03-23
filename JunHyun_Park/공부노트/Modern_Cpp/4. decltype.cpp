@@ -1,15 +1,15 @@
-#include<iostream>	// 4. decltype Å°¿öµå
+#include<iostream>	// 4. decltype í‚¤ì›Œë“œ
 #include<cstdio>
 #include<vector>
 #include<typeinfo>
 using namespace std;
 
-// decleared type(¼±¾ğµÈ Çü½Ä)ÀÇ ÁÙÀÓ¸» 
-// ÁÖ¾îÁø Ç¥Çö½ÄÀÇ Å¸ÀÔÀ» ¾Ë·ÁÁØ´Ù.
-// auto : °ª¿¡ ´ëÀÀÇÏ´Â Å¸ÀÔÀ» Ãß·Ğ
-// decltype : °ªÀ¸·ÎºÎÅÍ Å¸ÀÔÀ» Ãß·Ğ
+// decleared type(ì„ ì–¸ëœ í˜•ì‹)ì˜ ì¤„ì„ë§ 
+// ì£¼ì–´ì§„ í‘œí˜„ì‹ì˜ íƒ€ì…ì„ ì•Œë ¤ì¤€ë‹¤.
+// auto : ê°’ì— ëŒ€ì‘í•˜ëŠ” íƒ€ì…ì„ ì¶”ë¡ 
+// decltype : ê°’ìœ¼ë¡œë¶€í„° íƒ€ì…ì„ ì¶”ë¡ 
 
-// ¸®ÅÏÇüÀ» auto·Î ÇÒ ¶§ ¸®ÅÏ°ª Ãß·Ğ(Cpp11)
+// ë¦¬í„´í˜•ì„ autoë¡œ í•  ë•Œ ë¦¬í„´ê°’ ì¶”ë¡ (Cpp11)
 auto func1(int x, int y) -> decltype(x+y){
 	return x+y;
 }
@@ -20,19 +20,19 @@ auto func2(A a, B b) -> decltype(a+b){
 }
 
 template<typename A, typename B>
-auto func3(A a, B b){	// Cpp14 ºÎÅÍ´Â »ı·«°¡´É
+auto func3(A a, B b){	// Cpp14 ë¶€í„°ëŠ” ìƒëµê°€ëŠ¥
 	return a+b;
 }
 
 int main(){
 	auto a = 1;
 	auto b = 2.5;
-	decltype(a+b) c = 3; // a+bÀÇ Å¸ÀÔÀ¸·Î °áÁ¤. doubleÇü
+	decltype(a+b) c = 3; // a+bì˜ íƒ€ì…ìœ¼ë¡œ ê²°ì •. doubleí˜•
 
-	// c º¯¼öÀÇ Å¸ÀÔ Ãâ·Â
+	// c ë³€ìˆ˜ì˜ íƒ€ì… ì¶œë ¥
 	cout<<"c : "<< c <<" and type is " << typeid(c).name()<<endl;
 	
-	// ÇÔ¼ö È£Ãâ ÈÄ ¸®ÅÏÀÇ Å¸ÀÔ Ãâ·Â
+	// í•¨ìˆ˜ í˜¸ì¶œ í›„ ë¦¬í„´ì˜ íƒ€ì… ì¶œë ¥
 	cout<<"a+b : "<< a+b <<" and type is " << typeid(func3(a,b)).name()<<endl;
 	return 0;
 }

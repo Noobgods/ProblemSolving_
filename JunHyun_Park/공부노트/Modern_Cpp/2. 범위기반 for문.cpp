@@ -1,19 +1,19 @@
-#include<iostream>	// 2. ¹üÀ§±â¹İ for¹®
+#include<iostream>	// 2. ë²”ìœ„ê¸°ë°˜ forë¬¸
 #include<cstdio>
 #include<vector>
 using namespace std;
 
-// ¹üÀ§±â¹İ for¹®Àº foreach ¹®°ú ºñ½ÁÇÏ´Ù.
-// Å¬·¡½º¸¦ ¹üÀ§±â¹İ for ¹®À¸·Î »ç¿ëÇÏ±â À§ÇØ¼­´Â begin, end ÇÔ¼ö¸¦ Á¤ÀÇÇØ¾ßÇÑ´Ù.
+// ë²”ìœ„ê¸°ë°˜ forë¬¸ì€ foreach ë¬¸ê³¼ ë¹„ìŠ·í•˜ë‹¤.
+// í´ë˜ìŠ¤ë¥¼ ë²”ìœ„ê¸°ë°˜ for ë¬¸ìœ¼ë¡œ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œëŠ” begin, end í•¨ìˆ˜ë¥¼ ì •ì˜í•´ì•¼í•œë‹¤.
 int main(){
 	vector<int> v{1,2,3}; 
 
-	// ±âÁ¸ ¹æ¹ı
+	// ê¸°ì¡´ ë°©ë²•
 	for(vector<int>::iterator i=v.begin(); i != v.end; i++)
 		printf("%d ", i);
 	cout<<endl;
 
-	// ¹üÀ§±â¹İ for¹®
+	// ë²”ìœ„ê¸°ë°˜ forë¬¸
 	for(auto i : v)
 		printf("%d", i);
 	cout<<endl;

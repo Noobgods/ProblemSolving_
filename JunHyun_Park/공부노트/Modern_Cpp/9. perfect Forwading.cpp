@@ -1,9 +1,9 @@
-#include<iostream> // 9. ¿Ïº®ÇÑ Àü´Ş
+#include<iostream> // 9. ì™„ë²½í•œ ì „ë‹¬
 #include<vector>
 using namespace std;
 
-// L-Value Reference¸¦ ÀÎÀÚ·Î ¹Ş´Â ÇÔ¼ö¿¡ R-Value¸¦ ³Ñ°åÀ»¶§ ÇØ°áÇÏ´Â ¹æ¹ı.
-// Universal Reference : Å¸ÀÔ Ãß·ĞÀ» ÀÎÀÚ·Î ¹ŞÀ»¶§ ÁÂÃø°ª/¿ìÃø°ª ÂüÁ¶°¡ µÉ ¼öµµ ÀÖ´Ù.
+// L-Value Referenceë¥¼ ì¸ìë¡œ ë°›ëŠ” í•¨ìˆ˜ì— R-Valueë¥¼ ë„˜ê²¼ì„ë•Œ í•´ê²°í•˜ëŠ” ë°©ë²•.
+// Universal Reference : íƒ€ì… ì¶”ë¡ ì„ ì¸ìë¡œ ë°›ì„ë•Œ ì¢Œì¸¡ê°’/ìš°ì¸¡ê°’ ì°¸ì¡°ê°€ ë  ìˆ˜ë„ ìˆë‹¤.
 
 class Class{};
 int b;
@@ -24,13 +24,13 @@ vector<T> func (vector<T>&& v);
 template<typename T>
 void func(T&& t);
 
-/* C++ ÂüÁ¶ ±ÔÄ¢
-    1. non const lvalue reference´Â lvalue¸¸ ÂüÁ¶ °¡´É
-    2. const lvalue reference´Â lvalue / rvalue µÑ ´Ù ÂüÁ¶ °¡´É
-    3. rvalue reference´Â rvalue¸¸ ÂüÁ¶°¡´É (C++11ºÎÅÍ »ç¿ë °¡´É)
+/* C++ ì°¸ì¡° ê·œì¹™
+    1. non const lvalue referenceëŠ” lvalueë§Œ ì°¸ì¡° ê°€ëŠ¥
+    2. const lvalue referenceëŠ” lvalue / rvalue ë‘˜ ë‹¤ ì°¸ì¡° ê°€ëŠ¥
+    3. rvalue referenceëŠ” rvalueë§Œ ì°¸ì¡°ê°€ëŠ¥ (C++11ë¶€í„° ì‚¬ìš© ê°€ëŠ¥)
 */
 
-// ¿À¹ö·ÎµùÀ» ÅëÇØ ±¸ÇöÇßÀ»¶§´Â ¿øÇÏ´Â´ë·Î µ¿ÀÛÇÏÁö ¾Ê´Â °æ¿ì°¡ ÀÖ´Ù.
+// ì˜¤ë²„ë¡œë”©ì„ í†µí•´ êµ¬í˜„í–ˆì„ë•ŒëŠ” ì›í•˜ëŠ”ëŒ€ë¡œ ë™ì‘í•˜ì§€ ì•ŠëŠ” ê²½ìš°ê°€ ìˆë‹¤.
 
 void func(int& i){
     cout<<"This is L-Value Reference"<<endl;
@@ -40,7 +40,7 @@ void func(int&& i){
     cout<<"This is R-Value Reference"<<endl;
 }
 
-// forward Å°¿öµå¸¦ »ç¿ëÇÏÁö ¾ÊÀ¸¸é L-Value·Î ÀÎ½ÄÇÑ´Ù.
+// forward í‚¤ì›Œë“œë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šìœ¼ë©´ L-Valueë¡œ ì¸ì‹í•œë‹¤.
 template<typename T>
 void proc(T&& t){
     func(forward<T>(t));

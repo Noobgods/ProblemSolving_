@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
 
-// R-value Reference(¿ìÃø°ª ÂüÁ¶)
+// R-value Reference(ìš°ì¸¡ê°’ ì°¸ì¡°)
 /* 
-        ÁÂÃø°ª(L-Value) ¿ìÃø°ª(R-Value)
+        ì¢Œì¸¡ê°’(L-Value) ìš°ì¸¡ê°’(R-Value)
     int a              =3
     
-    ¿ìÃø°ªÀº Ç¥Çö½ÄÀÌ Á¾·áµÇ¸é ´õÀÌ»ó Á¸ÀçÇÏÁö ¾Ê°ÔµÊ. (ÀÓ½Ã°³Ã¼)
-    Å©±â°¡ Å« ÀÚ·áÇüÀÏ °æ¿ì¿¡ º¹»ç¸¦ ¹Ýº¹ÀûÀ¸·Î ÇÒ°æ¿ì ¿À¹öÇìµå°¡ ¹ß»ýÇÒ ¼ö ÀÖ´Ù.
-    ¿ìÃø°ª ÂüÁ¶´Â ¿ìÃø°ªÀ» ÆÄ±«ÇÏÁö ¾Ê°í ¿ìÃø°ªÀ» ±×´ë·Î ÂüÁ¶ÇÒ ¼ö ÀÖ°Ô ÇÑ´Ù.
-    ±×·¯¹Ç·Î Å©±â°¡ Å« ÀÚ·áÇüÀ» ÂüÁ¶ÇÒ¶§ ¿ìÃø°ª ÂüÁ¶¸¦ »ç¿ëÇÏ¸é ¿À¹öÇìµå¸¦ ÁÙÀÏ ¼ö ÀÖ´Ù.
+    ìš°ì¸¡ê°’ì€ í‘œí˜„ì‹ì´ ì¢…ë£Œë˜ë©´ ë”ì´ìƒ ì¡´ìž¬í•˜ì§€ ì•Šê²Œë¨. (ìž„ì‹œê°œì²´)
+    í¬ê¸°ê°€ í° ìžë£Œí˜•ì¼ ê²½ìš°ì— ë³µì‚¬ë¥¼ ë°˜ë³µì ìœ¼ë¡œ í• ê²½ìš° ì˜¤ë²„í—¤ë“œê°€ ë°œìƒí•  ìˆ˜ ìžˆë‹¤.
+    ìš°ì¸¡ê°’ ì°¸ì¡°ëŠ” ìš°ì¸¡ê°’ì„ íŒŒê´´í•˜ì§€ ì•Šê³  ìš°ì¸¡ê°’ì„ ê·¸ëŒ€ë¡œ ì°¸ì¡°í•  ìˆ˜ ìžˆê²Œ í•œë‹¤.
+    ê·¸ëŸ¬ë¯€ë¡œ í¬ê¸°ê°€ í° ìžë£Œí˜•ì„ ì°¸ì¡°í• ë•Œ ìš°ì¸¡ê°’ ì°¸ì¡°ë¥¼ ì‚¬ìš©í•˜ë©´ ì˜¤ë²„í—¤ë“œë¥¼ ì¤„ì¼ ìˆ˜ ìžˆë‹¤.
     
 */
 template<typename T>
 class X{
     public:
-    X& operator=(T&& rhs){   // ¿ìÃø°ªÀ» ÂüÁ¶ÇÔ
+    X& operator=(T&& rhs){   // ìš°ì¸¡ê°’ì„ ì°¸ì¡°í•¨
         this->value = rhs;
         return *this;
     }
@@ -35,7 +35,7 @@ int main(){
     int* g = &a;    // L = R
 
     X<int> x;
-    x = 5;  // ¿ìÃø°ª ÂüÁ¶¸¦ ÅëÇØ 5°¡ À¯ÁöµÇ°í ±× °ªÀ» ¹ÞÀ½
+    x = 5;  // ìš°ì¸¡ê°’ ì°¸ì¡°ë¥¼ í†µí•´ 5ê°€ ìœ ì§€ë˜ê³  ê·¸ ê°’ì„ ë°›ìŒ
     
     cout<< x.getValue() <<endl; 
     return 0;
