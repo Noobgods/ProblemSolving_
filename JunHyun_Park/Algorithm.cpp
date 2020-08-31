@@ -1,16 +1,13 @@
-#include<iostream>
-using namespace std;
+#include <cstdio>
 
-int main(int argc, char** argv)
-{
-	int test_case;
-	int T;
-
-	cin >> T;
-
-	for(test_case = 1; test_case <= T; ++test_case){
-        int n;
-        cin >> n;
+int main(){
+	int x1, x2, n, y1, y2, startX;
+	scanf("%d %d %d %d %d", &n, &x1, &x2, &y1, &y2);
+	for(int i= 0; i<n; i++){
+		int a = i + ((x2- x1)*i) +x1, 
+		b = a + (x2- x1);
+		printf(",%d, %d, %d, %d)\n", a, y1, b, y2);
 	}
-	return 0;//정상종료시 반드시 0을 리턴해야합니다.
+
+	return 0;
 }
