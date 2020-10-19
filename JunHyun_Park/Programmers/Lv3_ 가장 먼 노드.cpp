@@ -7,8 +7,8 @@
 #include<iostream>
 using namespace std;
 
-int dst[20001];
 bool visit[20001];
+int dst[20001];
 int solution(int n, vector<vector<int>> edge) {
     int answer = 0;
     vector<vector<bool>> graph(n, vector<bool>(n, false));
@@ -35,7 +35,6 @@ int solution(int n, vector<vector<int>> edge) {
             if(graph[now][i] && !visit[i]){
                 visit[i] = true;
                 dst[i] = dst[now]+1;
-                cout << "visit : " << now << " to "<< i << " | " << dst[i] << endl;
                 q.push(i);
             }
         }
@@ -43,10 +42,6 @@ int solution(int n, vector<vector<int>> edge) {
 
     sort(dst, dst+n);
 
-    for(int i=0; i<n; i++){
-        cout << dst[i] << " ";
-    }
-    cout << endl;
     int max = dst[n-1];
     answer = 1;
     for(int i = n-2; i>=0; i--){
@@ -57,6 +52,7 @@ int solution(int n, vector<vector<int>> edge) {
     return answer;
 }
 
+// ¿‘√‚∑¬
 int main(){
     int n, k;
     vector<vector<int>> edge;
