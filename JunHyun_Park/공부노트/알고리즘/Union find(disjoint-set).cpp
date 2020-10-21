@@ -1,8 +1,8 @@
 #include<cstdio>    // 1717_집합의표현 [Union-Find]
 int N, M, root[1000001], rank[1000001];
 int find(int t){
-   if(root[t] != t) return root[t] = find(root[t]);
-   else return t; 
+   if(root[t] == t) return t; 
+   else return root[t] = find(root[t]);
 }
 void merge(int x, int y ){
     x = find(x);
@@ -14,7 +14,8 @@ void merge(int x, int y ){
     //
     if(rank[x] < rank[y]){
         root[x] = y;
-    } else{
+    } 
+    else{
         root[y] = x;
         
         if(rank[x] == rank[y])
