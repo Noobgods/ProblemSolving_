@@ -47,7 +47,8 @@
         "typeinfo": "cpp",
         "chrono": "cpp",
         "thread": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "queue": "cpp"
     },
     "files.encoding": "euckr",
     "files.autoGuessEncoding": true

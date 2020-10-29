@@ -1,77 +1,64 @@
-﻿#include<cstdio>    // 2610_회의준비
-#include<algorithm>
-#include<cstring>
-#include<vector>
+﻿#include <cstdio>
+#include <algorithm>
+#include <vector>
+
 using namespace std;
 
-#define INF 100000
-int N,M, Table[102][102], check[102], maxTime[102], minVal[102], minIdx[102];
-int k=1;
-
-void dfs(int x){
-    check[x] = k;
-    for(int i=1; i<=N; i++){
-        if(check[i] ==0 && Table[x][i] != INF){
-            dfs(i);
-        }
-    }
+bool cmp1(const pair<pair<int,int>,bool>& a, const pair<pair<int,int>,bool>& b){
+	return a.first.first < b.first.first;
+}
+bool cmp2(const pair<pair<int,int>,bool>& a, const pair<pair<int,int>,bool>& b){
+	return a.first.second < b.first.second;
 }
 
 int main(){
-    scanf("%d %d", &N, &M);
+	int T;
+	
+	scanf("%d", &T);
+	while(T--){
+		int N, answer=0;
+		scanf("%d", &N);
 
-    for(int i = 1; i <= N; i++){
-        for(int j = 1; j <= N; j++) Table[i][j] = 100000;
-        minVal[i] = INF, minIdx[i] = -1, Table[i][i] = 0;
-    }
-    for(int i=0; i<M; i++){
-        int x, y;
-        scanf("%d %d", &x, &y);
-        Table[x][y] = 1;
-        Table[y][x] = 1;
-    }
+		vector<pair<pair<int, int>, bool>> arr;
 
-    for(int k = 1; k <= N; k++){
-        for(int i = 1; i <= N; i++){
-            for(int j = 1; j <= N; j++){
-                if(Table[i][k] + Table[k][j] < Table[i][j])
-                    Table[i][j] = Table[i][k] + Table[k][j];
-            }
-        }
-    }
-    
-    vector<int> rep;
+		for(int i=0; i<N; i++){
+			int input1, input2;
+			scanf("%d %d", &input1, &input2);
+			arr.push_back(make_pair(make_pair(input1, input2), true));
+		}
 
-    for(int i=1; i<=N; i++){
-        if(check[i] == 0){
-            dfs(i);
-            k++;
-        }
-    }
+		sort(arr.begin(), arr.end(), cmp1);
 
-    for(int i=1; i<=N; i++){
-        for(int j=1; j<=N; j++){
-            if(Table[i][j] != INF){
-                if(maxTime[i] < Table[i][j]){
-                    maxTime[i] = Table[i][j];
-                }
-            }               
-        }
-        if(maxTime[i] < minVal[check[i]]) {
-            minIdx[check[i]] = i;
-            minVal[check[i]] = maxTime[i];
-        }
-    }
+		for(int i=0; i<N-1; i++){
+			if(arr[i].second)
+			for(int j=i+1; j<N; j++){
+				if(arr[j].second)
+				if(arr[i].first.second < arr[j].first.second){
+					arr[j].second = false;
+				}
+			}
+		}
+		
+		sort(arr.begin(), arr.end(), cmp2);
 
-    for(int i=1; i<k; i++){
-        rep.push_back(minIdx[i]);
-    }
+		for(int i=0; i<N-1; i++){
+			if(arr[i].second)
+			for(int j=i+1; j<N; j++){
+				if(arr[j].second)
+				if(arr[i].first.first < arr[j].first.first){
+					arr[j].second = false;
+				}
+			}
+		}
+		
+		for(int i=0; i<N; i++){
+			if(arr[i].second){
+				answer++;
+			}
+		}
+		
+		printf("%d\n", answer);
+	}
 
-    sort(rep.begin(), rep.end());
-    printf("%lu\n", rep.size());
-
-    for(int i=0; i<rep.size(); i++){
-        printf("%d\n", rep[i]);
-    }
 	return 0;
 }

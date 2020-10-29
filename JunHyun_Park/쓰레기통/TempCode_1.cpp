@@ -1,47 +1,47 @@
-#include <cstdio>	// 1019 책 페이지
-#define ll  long long
- 
-ll start, finish, temp;
-int answer[10];
- 
-void sol(int n) {
-    for (int j = n; j > 0; j/=10) {
-        answer[j%10] += temp;
-    }
-}
- 
-int main(int argc, char const *argv[]) {
-    start = 1;
-    temp = 1;
-    scanf("%d",&finish);
-    
-    while (start <= finish) {
-        while (start % 10 != 0 && start <= finish) {
-            sol(start);
-            start++;
-        }
-    
-        if (start > finish) {
-            break;
-        }
-    
-        while (finish % 10 != 9 && start <= finish) {
-            sol(finish);
-            finish--;
-        }
-    
-        ll cnt = (finish/10) - (start/10) + 1;
-        for (int i = 0; i < 10; i++) {
-            answer[i] += cnt * temp;
-        }
-    
-        start /= 10;
-        finish /= 10;
-        temp *= 10LL;
-    }
-    
-    for (int i = 0; i < 10; i++) {
-        printf("%d ",answer[i]);
-    }
-    return 0;
+#include <cstdio>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main(){
+	int T;
+	
+	scanf("%d", &T);
+	while(T--){
+		int N, answer=0;
+		scanf("%d", &N);
+
+		vector<pair<pair<int, int>, bool>> arr;
+
+		for(int i=0; i<N; i++){
+			int input1, input2;
+			scanf("%d %d", &input1, &input2);
+			arr.push_back(make_pair(make_pair(input1, input2), true));
+		}
+
+		for(int i=0; i<N-1; i++){
+			if(arr[i].second)
+			for(int j=i+1; j<N; j++){
+				if(arr[j].second)
+				if(arr[i].first.first < arr[j].first.first && arr[i].first.second < arr[j].first.second){
+					arr[j].second = false;
+				}
+				if(arr[i].first.first > arr[j].first.first && arr[i].first.second > arr[j].first.second){
+					arr[i].second = false;
+					break;
+				}
+			}
+		}
+		
+		for(int i=0; i<N; i++){
+			if(arr[i].second){
+				answer++;
+			}
+		}
+		
+		printf("%d\n", answer);
+	}
+
+	return 0;
 }
