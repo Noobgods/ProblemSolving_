@@ -1,4 +1,4 @@
-#include <string>	// Level2_ ??? [?]
+#include <string>	// Level2_ 프린터 [큐]
 #include <vector>
 #include <queue>
 
