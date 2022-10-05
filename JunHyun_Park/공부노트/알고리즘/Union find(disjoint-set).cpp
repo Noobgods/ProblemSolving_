@@ -22,6 +22,7 @@ void merge(int x, int y ){
             rank[x]++;
     }
 }
+
 int main(){
     scanf("%d %d",&N,&M);    
         

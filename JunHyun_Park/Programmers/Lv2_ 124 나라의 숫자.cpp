@@ -1,15 +1,24 @@
-#include <string>   // Level2_ 124 나라의 숫자 [구현]
-#include <vector>
-#include <algorithm>
+#include <iostream>
 
 using namespace std;
 
-string solution(int n) {
-    string answer = "";
-    for(int i= n; i>0;){
-        answer.push_back(i%3 == 0 ? '4' : i%3 +'0');
-        i = answer.back() == '4' ? i/3 -1 : i/3; 
+int solution(int n, int a, int b)
+{
+    int answer = 0;
+    
+    while ( a != b){
+        a = (a+1)/2;
+        b = (b+1)/2;
+        answer++;
     }
-    reverse(answer.begin(), answer.end());
+    
     return answer;
+}
+
+
+int main(){
+    int n, a, b;
+    cin >> n >> a >> b;
+    cout << solution(n, a, b);
+    return 0;
 }

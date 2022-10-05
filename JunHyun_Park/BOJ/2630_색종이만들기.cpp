@@ -30,7 +30,9 @@ void quad(int x1, int y1, int x2, int y2){
 
     if(checkQuad(xm, ym, x2, y2));
     else quad(xm, ym, x2, y2);
+    
 }
+
 int main(){
     scanf("%d", &N);
     for(int i=0; i<N; i++){
@@ -38,7 +40,9 @@ int main(){
             scanf("%d", &board[i][j]);
         }
     }
-    quad(0,0,N,N);
+    if (checkQuad(0,0,N,N));
+    else quad(0,0,N,N);
+    
     printf("%d\n%d",white, black);
     return 0;
 }

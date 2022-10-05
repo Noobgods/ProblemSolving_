@@ -1,4 +1,4 @@
-﻿#include <string>	// Level2_ 수식 최대화
+﻿#include <string>
 #include <vector>
 #include <stack>
 #include <algorithm>

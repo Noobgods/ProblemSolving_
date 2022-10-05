@@ -61,8 +61,8 @@ long long sum(
 	// [left, right] 와 [start, end] 가 일부 겹치는 경우
 	else{
 		int mid = (start+end)/2;
-		return  sum(tree, node*2+1, start, mid, left, right) + 
-				sum(tree, node*2+2, mid+1, end, left, right);
+		return  sum(tree, node * 2 + 1, start, mid, left, right) + 
+				sum(tree, node * 2 + 2, mid+1, end, left, right);
 	}
 }
 

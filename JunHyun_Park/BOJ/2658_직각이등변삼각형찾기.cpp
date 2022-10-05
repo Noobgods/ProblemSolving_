@@ -224,5 +224,6 @@ int main(){
 		printf("%d %d\n", tri[1][0],tri[1][1]);
 		printf("%d %d\n", tri[2][0],tri[2][1]);
 	}
+	
 	return 0;
 }

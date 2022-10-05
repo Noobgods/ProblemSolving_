@@ -38,6 +38,7 @@ int solution(vector<int> priorities, int location) {
 	return answer;
 }
 
+// IO
 int main(){
 	int n, location;
 	cin >> n >> location;
