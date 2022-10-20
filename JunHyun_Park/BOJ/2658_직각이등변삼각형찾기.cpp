@@ -102,6 +102,8 @@ bool rhombus_1(int x, int y){
 	memset(S, 0, sizeof(S));
 	for(i=0; A[x][y+i]; i++);
 	len = i;
+    
+    if(len%2 == 0) return false;
 
 	for(i=0; i<len/2+1; i++)
 		for(j=0; j<len-(i*2); j++)
@@ -126,6 +128,8 @@ bool rhombus_2(int x, int y){
 	for(i=0; A[x+i][y]; i++);
 	len = i;
 
+    if(len%2 == 0) return false;
+
 	for(i=0; i<len/2+1; i++)
 		for(j=0; j<len-(i*2); j++)
 			S[x+j+i][y-i] = true;
@@ -149,6 +153,8 @@ bool rhombus_3(int x, int y){
 	for(i=0; A[x][y-i]; i++);
 	len = i;
 
+    if(len%2 == 0) return false;
+
 	for(i=0; i<len/2+1; i++)
 		for(j=0; j<len-(i*2); j++)
 			S[x-i][y-j-i] = true;
@@ -171,6 +177,8 @@ bool rhombus_4(int x, int y){
 	memset(S, 0, sizeof(S));
 	for(i=0; A[x-i][y]; i++);
 	len = i;
+
+    if(len%2 == 0) return false;
 
 	for(i=0; i<len/2+1; i++)
 		for(j=0; j<len-(i*2); j++)

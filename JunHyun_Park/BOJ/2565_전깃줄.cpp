@@ -1,4 +1,4 @@
-#include<cstdio>    // 2565_전봇대 [DP]
+#include<cstdio>    // 2565_전깃줄 [DP]
 #include<algorithm>
 #include<vector>
 using namespace std;
