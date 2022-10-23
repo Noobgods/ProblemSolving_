@@ -1,4 +1,4 @@
-#include <cstdio>   // 1463_1·Î¸¸µé±â [DP]
+#include <cstdio>   // 1463_1ë¡œë§Œë“¤ê¸° [DP]
 int n, *r;
 int min(int x, int y) { return x < y ? x : y; }
 int cal(int n) {

@@ -1,4 +1,4 @@
-#include<cstdio> // 10830_???? [??]
+#include<cstdio> // 10830_행렬제곱 [수학]
 #include<cmath>
 #define REM 1000
 
