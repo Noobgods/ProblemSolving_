@@ -1,4 +1,4 @@
-#include<cstdio>	// 7569_Åä¸¶Åä [BFS]
+#include<cstdio>	// 7569_í† ë§ˆí†  [BFS]
 #include<queue>
 #include<tuple>
 using namespace std;

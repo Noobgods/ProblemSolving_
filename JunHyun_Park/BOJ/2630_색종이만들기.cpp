@@ -1,4 +1,4 @@
-#include<cstdio>    // 2630_»öÁ¾ÀÌ¸¸µé±â [ºĞÇÒÁ¤º¹]
+#include<cstdio>    // 2630_ìƒ‰ì¢…ì´ë§Œë“¤ê¸° [ë¶„í• ì •ë³µ]
 using namespace std;
 int white, black, N;
 bool board[129][129];

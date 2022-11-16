@@ -1,4 +1,4 @@
-#include<cstdio>    // 2960_¿¡¶óÅä½ºÅ×³×½ºÀÇÃ¼ [±¸Çö]
+#include<cstdio>    // 2960_ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ì²´ [êµ¬í˜„]
 #include<list>
 #include<algorithm>
 using namespace std;

@@ -1,4 +1,4 @@
-#include <iostream>     // 2504_°ıÈ£ÀÇ °ª [½ºÅÃ]
+#include <iostream>     // 2504_ê´„í˜¸ì˜ ê°’ [ìŠ¤íƒ]
 #include <stack>
 using namespace std;
 char s[40], c;

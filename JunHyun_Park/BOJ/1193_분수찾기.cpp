@@ -1,4 +1,4 @@
-#include <cstdio>   // 1193_ºÐ¼öÃ£±â [¼öÇÐ], [±ÔÄ¢]
+#include <cstdio>   // 1193_ë¶„ìˆ˜ì°¾ê¸° [ìˆ˜í•™], [ê·œì¹™]
 #include <math.h>
 int s;
 int main(){

@@ -1,4 +1,4 @@
-#include<cstdio>	//11404_ÇÃ·ÎÀÌµå [ÇÃ·ÎÀÌµå¿ö¼È¾Ë°í¸®Áò] 
+#include<cstdio>	//11404_í”Œë¡œì´ë“œ [í”Œë¡œì´ë“œì›Œì…œì•Œê³ ë¦¬ì¦˜] 
 using namespace std;
 #define MAX 100000001
 

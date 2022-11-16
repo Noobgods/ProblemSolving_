@@ -1,4 +1,4 @@
-#include <string>   // Level2_ ±¸¸íº¸Æ® [±×¸®µð]
+#include <string>   // Level2_ êµ¬ëª…ë³´íŠ¸ [ê·¸ë¦¬ë””]
 #include <vector>
 #include <algorithm>
 

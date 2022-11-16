@@ -1,4 +1,4 @@
-#include<cstdio>    // 1932_Á¤¼ö»ï°¢Çü [DP]
+#include<cstdio>    // 1932_ì •ìˆ˜ì‚¼ê°í˜• [DP]
 int A[501][501];
 int S[501][501];
 int n;

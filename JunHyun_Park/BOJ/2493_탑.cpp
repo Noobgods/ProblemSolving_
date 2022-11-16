@@ -1,4 +1,4 @@
-#include <cstdio>	// 2493_е╬ [╫╨ец]
+#include <cstdio>	// 2493_М┐▒ [Л┼╓М┐²]
 #include <stack>
 #include <iostream>
 using namespace std;

@@ -1,4 +1,4 @@
-#include<cstdio>    // 2523_º°Âï±â13
+#include<cstdio>    // 2523_ë³„ì°ê¸°13
 int N;
 int main(){
     scanf("%d", &N);

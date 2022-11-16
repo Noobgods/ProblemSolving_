@@ -1,4 +1,4 @@
-#include <cstdio>   // 1152_´Ü¾îÀÇ°³¼ö [¹®ÀÚ¿­Ã³¸®]
+#include <cstdio>   // 1152_ë‹¨ì–´ì˜ê°œìˆ˜ [ë¬¸ìì—´ì²˜ë¦¬]
 char c;
 int n;
 bool r = true;

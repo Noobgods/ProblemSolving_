@@ -1,4 +1,4 @@
-#include<cstdio>	// 12847_²Ü¾Æ¸£¹ÙÀÌÆ® [±ÔÄ¢]
+#include<cstdio>	// 12847_ê¿€ì•„ë¥´ë°”ì´íŠ¸ [ê·œì¹™]
 int main(){
 	int n,m,w[100001];
 	long long s=0, a;

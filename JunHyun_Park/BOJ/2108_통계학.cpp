@@ -1,4 +1,4 @@
-#include<cstdio>	// 2108_Åë°èÇÐ [Á¤·Ä], [±¸Çö]
+#include<cstdio>	// 2108_í†µê³„í•™ [ì •ë ¬], [êµ¬í˜„]
 int N, num[8001], count, s;
 double sum;
 int main(){

@@ -1,4 +1,4 @@
-#include<cstdio>    // 12842_Æ¢±è¼Òº¸·ç [±¸Çö]
+#include<cstdio>    // 12842 íŠ€ê¹€ì†Œë³´ë£¨ [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 int n, s, m, i, me[100000][2], es;
 int main() {
 	scanf("%d %d %d ", &n, &s, &m);

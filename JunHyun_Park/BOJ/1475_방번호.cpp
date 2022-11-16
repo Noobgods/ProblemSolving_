@@ -1,4 +1,4 @@
-#include<iostream>  // 1475_¹æ¹øÈ£ [¼öÇĞ], [¹®ÀÚ¿­Ã³¸®]
+#include<iostream>  // 1475_ë°©ë²ˆí˜¸ [ìˆ˜í•™], [ë¬¸ìì—´ì²˜ë¦¬]
 using namespace std;
 int N[9], s;
 int main(){

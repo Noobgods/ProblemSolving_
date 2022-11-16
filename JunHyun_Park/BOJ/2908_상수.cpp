@@ -1,4 +1,4 @@
-#include<cstdio>    // 2908_»ó¼ö [¹®ÀÚ¿­Ã³¸®]
+#include<cstdio>    // 2908_ìƒìˆ˜ [ë¬¸ìì—´ì²˜ë¦¬]
 #include<cstdlib>
 #define max(x,y) x>y?x:y
 char A[4], B[4];

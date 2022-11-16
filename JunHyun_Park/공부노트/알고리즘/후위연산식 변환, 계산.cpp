@@ -1,4 +1,4 @@
-#include<cstdio>	// °ýÈ£¸¸À» °í·ÁÇÑ ¿¬»ê. [ÈÄÀ§¿¬»ê½Ä º¯È¯], [ÈÄÀ§¿¬»ê½Ä °è»ê]
+#include<cstdio>	// ê´„í˜¸ë§Œì„ ê³ ë ¤í•œ ì—°ì‚°. [í›„ìœ„ì—°ì‚°ì‹ ë³€í™˜], [í›„ìœ„ì—°ì‚°ì‹ ê³„ì‚°]
 template <typename T>
 class stack{
 public:
@@ -25,40 +25,40 @@ private:
 };
 
 int main(){
-	short N, top = -1;	// ¹®ÀÚ °¹¼ö, ÈÄÀ§ º¯È¯ ¹®ÀÚ¿­ÀÇ ±æÀÌ
-	char c, s[20];	// ÀÔ·Â ¹®ÀÚ , ÈÄÀ§ º¯È¯ ¹®ÀÚ¿­
-	stack<int> n_s;	// ÇÇ¿¬»êÀÚ ½ºÅÃ 
-	stack<char> oper;	// ¿¬»êÀÚ ½ºÅÃ
+	short N, top = -1;	// ë¬¸ìž ê°¯ìˆ˜, í›„ìœ„ ë³€í™˜ ë¬¸ìžì—´ì˜ ê¸¸ì´
+	char c, s[20];	// ìž…ë ¥ ë¬¸ìž , í›„ìœ„ ë³€í™˜ ë¬¸ìžì—´
+	stack<int> n_s;	// í”¼ì—°ì‚°ìž ìŠ¤íƒ 
+	stack<char> oper;	// ì—°ì‚°ìž ìŠ¤íƒ
 
 	scanf("%d ", &N);
 	
 	for(int i=0; i<N; i++){
 		scanf("%c", &c);
 		
-		if(c >= '0' && c <= '9') s[++top] = c;	// ÇÇ¿¬»êÀÚ
-		else if(c == '(') 	// ¿©´Â °ýÈ£
+		if(c >= '0' && c <= '9') s[++top] = c;	// í”¼ì—°ì‚°ìž
+		else if(c == '(') 	// ì—¬ëŠ” ê´„í˜¸
 			oper.push(c);
 
-		else if(c == '*' || c == '+' || c == '-') {	// ¿¬»êÀÚ
-			if(!oper.isEmpty() && oper.top() != '(') // ºñ¾îÀÖÁö ¾Ê°í ½ºÅÃ¿¡ ÀÖ´Â°ÍÀÌ °ýÈ£°¡ ¾Æ´Ï¸é
-				s[++top] = oper.pop();	// °ýÈ£Á¶°ÇÀ» ¿¬»êÀÚ ¿ì¼±¼øÀ§¿¡ ¸ÂÃß¾î ´Ù¸¥ Á¶°ÇÀ» ÁöÁ¤ÇÏ¸é ¿ì¼±¼øÀ§ ÁöÁ¤ °¡´É
+		else if(c == '*' || c == '+' || c == '-') {	// ì—°ì‚°ìž
+			if(!oper.isEmpty() && oper.top() != '(') // ë¹„ì–´ìžˆì§€ ì•Šê³  ìŠ¤íƒì— ìžˆëŠ”ê²ƒì´ ê´„í˜¸ê°€ ì•„ë‹ˆë©´
+				s[++top] = oper.pop();	// ê´„í˜¸ì¡°ê±´ì„ ì—°ì‚°ìž ìš°ì„ ìˆœìœ„ì— ë§žì¶”ì–´ ë‹¤ë¥¸ ì¡°ê±´ì„ ì§€ì •í•˜ë©´ ìš°ì„ ìˆœìœ„ ì§€ì • ê°€ëŠ¥
 			oper.push(c);
 		}
 		else if(c == ')'){
-			while(oper.top() != '(')	// °ýÈ£°¡ ³ª¿Ã¶§ ±îÁö ¿¬»êÀÚ¸¦ pop (´Ù¸¥ Á¶°Ç Àû¿ë½Ã ¿¬»êÀÚ ¿ì¼±¼øÀ§)
+			while(oper.top() != '(')	// ê´„í˜¸ê°€ ë‚˜ì˜¬ë•Œ ê¹Œì§€ ì—°ì‚°ìžë¥¼ pop (ë‹¤ë¥¸ ì¡°ê±´ ì ìš©ì‹œ ì—°ì‚°ìž ìš°ì„ ìˆœìœ„)
 				s[++top] = oper.pop();
 			oper.pop();
 		}
 	}
 
-	// ½ºÅÃ ºñ¿ì±â
+	// ìŠ¤íƒ ë¹„ìš°ê¸°
 	while(!oper.isEmpty()) s[++top] = oper.pop();
 	s[++top] = '\0';
 	
-	// ÈÄÀ§ ¿¬»ê½Ä Ãâ·Â
+	// í›„ìœ„ ì—°ì‚°ì‹ ì¶œë ¥
 	printf("%s\n", s);
 	
-	// ÈÄÀ§ ¿¬»ê½Ä °è»ê
+	// í›„ìœ„ ì—°ì‚°ì‹ ê³„ì‚°
 	for(int i=0; s[i] != '\0'; i++){
 		int a, b;
 		if(s[i] == '+') n_s.push(n_s.pop() + n_s.pop());

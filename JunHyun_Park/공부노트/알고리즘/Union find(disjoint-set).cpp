@@ -1,4 +1,4 @@
-#include<cstdio>    // 1717_ÁıÇÕÀÇÇ¥Çö [Union-Find]
+#include<cstdio>    // 1717_ì§‘í•©ì˜í‘œí˜„ [Union-Find]
 int N, M, root[1000001], rank[1000001];
 int find(int t){
    if(root[t] == t) return t; 

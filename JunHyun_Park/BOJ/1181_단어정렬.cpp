@@ -1,4 +1,4 @@
-#include<cstdio>	// 1181_´Ü¾îÁ¤·Ä [Á¤·Ä]
+#include<cstdio>	// 1181_ë‹¨ì–´ì •ë ¬ [ì •ë ¬]
 #include<cstring>
 int n;
 char s[20002][55];

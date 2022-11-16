@@ -1,4 +1,4 @@
-#include <cstdio>   //1062_°¡¸£Ä§ [¹éÆ®·¡Å·]
+#include <cstdio>   //1062_ê°€ë¥´ì¹¨ [ë°±íŠ¸ëž˜í‚¹]
 #define MAX(x,y) x>y?x:y
 
 unsigned int word[50], max, N, K, check;

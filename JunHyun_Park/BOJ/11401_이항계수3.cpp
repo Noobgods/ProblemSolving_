@@ -1,4 +1,4 @@
-#include<cstdio>    // 11401_ÀÌÇ×°è¼ö3 [¼öÇĞ]
+#include<cstdio>    // 11401_ì´í•­ê³„ìˆ˜3 [ìˆ˜í•™]
 #define MOD 1000000007
 
 long long pwr(long long p, long long r){

@@ -1,4 +1,4 @@
-#include <cstdio>   // 1546_Æò±Õ [±ÔÄ¢]
+#include <cstdio>   // 1546_í‰ê·  [ìˆ˜í•™]
 #define max(x, y) x>y?x:y
 int n, a[1000], m;
 float z;

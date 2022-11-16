@@ -1,4 +1,4 @@
-#include<cstdio>    // 2355_½Ã±×¸¶ [¼öÇÐ]
+#include<cstdio>    // 2355_ì‹œê·¸ë§ˆ [ìˆ˜í•™]
 long long int A,B, x,y, s;
 int main(){
     scanf("%lld %lld",&A, &B);

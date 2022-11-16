@@ -1,4 +1,4 @@
-#include<cstdio>	// 2042_±¸°£ÇÕ±¸ÇÏ±â [¼¼±×¸ÕÆ®Æ®¸®]
+#include<cstdio>	// 2042_êµ¬ê°„í•©êµ¬í•˜ê¸° [ì„¸ê·¸ë¨¼íŠ¸íŠ¸ë¦¬]
 #include<vector>
 #include<cmath>
 using namespace std;
@@ -6,18 +6,18 @@ using namespace std;
 
 int N, M, K;
 
-// ¼¼±×¸ÕÆ® Æ®¸®
-// - »ı¼º °úÁ¤ 
+// ì„¸ê·¸ë¨¼íŠ¸ íŠ¸ë¦¬
+// - ìƒì„± ê³¼ì • 
 long long init(
 	vector<long long> &a, 
 	vector<long long> &tree,
 	int node, int start, int end 
 ){	
-	// ¸®ÇÁ ³ëµåÀÏ °æ¿ì
+	// ë¦¬í”„ ë…¸ë“œì¼ ê²½ìš°
 	if(start == end)
 		return tree[node] = a[start];
 	
-	// °¡Áö »¸±â
+	// ê°€ì§€ ë»—ê¸°
 	else{
 		int mid = (start + end)/2;
 		return tree[node] = 
@@ -26,17 +26,17 @@ long long init(
 	}
 }
 
-// - °»½Å °úÁ¤
+// - ê°±ì‹  ê³¼ì •
 void update(vector<long long> &tree, int node, int start, int end, int index, long long diff)
 {
-	// ¹Ù²Ù°íÀÚ ÇÏ´Â ÀÎµ¦½º °Ë»ç
+	// ë°”ê¾¸ê³ ì í•˜ëŠ” ì¸ë±ìŠ¤ ê²€ì‚¬
     if (!(start <= index && index <= end))
         return;
     
-	// ÀÎµ¦½º¿¡ Â÷ÀÌ°ª ´õÇÏ±â
+	// ì¸ë±ìŠ¤ì— ì°¨ì´ê°’ ë”í•˜ê¸°
     tree[node] += diff;
  
-	// °¡Áö »¸±â
+	// ê°€ì§€ ë»—ê¸°
     if(start != end)
     {
         int mid = (start + end) / 2;
@@ -45,20 +45,20 @@ void update(vector<long long> &tree, int node, int start, int end, int index, lo
     }
 }
 
-// - ÇÕ °úÁ¤
+// - í•© ê³¼ì •
 long long sum(
 	vector<long long> &tree,
 	int node, int start, int end, int left, int right
 ){
-	// [left, right] ¿Í [start, end] °¡ ÀüÇô °ãÄ¡Áö ¾Ê´Â °æ¿ì
+	// [left, right] ì™€ [start, end] ê°€ ì „í˜€ ê²¹ì¹˜ì§€ ì•ŠëŠ” ê²½ìš°
 	if(left > end || right < start)
 		return 0;
 
-	// [left, right] ¿Í [start, end] °¡ ¼­·Î ¹üÀ§¿¡ ÀÖÀ» °æ¿ì
+	// [left, right] ì™€ [start, end] ê°€ ì„œë¡œ ë²”ìœ„ì— ìˆì„ ê²½ìš°
 	else if (left <= start && end <= right)
 		return tree[node];
 
-	// [left, right] ¿Í [start, end] °¡ ÀÏºÎ °ãÄ¡´Â °æ¿ì
+	// [left, right] ì™€ [start, end] ê°€ ì¼ë¶€ ê²¹ì¹˜ëŠ” ê²½ìš°
 	else{
 		int mid = (start+end)/2;
 		return  sum(tree, node * 2 + 1, start, mid, left, right) + 

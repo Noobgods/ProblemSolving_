@@ -1,4 +1,4 @@
-#include<cstdio>	// 2605_ÁÙ¼¼¿ì±â [±ÔÄ¢]
+#include<cstdio>	// 2605_ì¤„ì„¸ìš°ê¸° [ê·œì¹™]
 #include<stdlib.h>
 
 void swap(int num, int *ln);

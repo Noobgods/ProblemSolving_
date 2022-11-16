@@ -1,4 +1,4 @@
-#include<cstdio>    // 3009_³×¹øÂ°Á¡ [¼öÇĞ]
+#include<cstdio>    // 3009_ë„¤ë²ˆì§¸ì  [ìˆ˜í•™]
 int x[2][2]={0,},y[2][2]={0,};
 int main(){
     int A,B,kx, ky;

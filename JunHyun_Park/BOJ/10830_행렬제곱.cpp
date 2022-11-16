@@ -1,4 +1,4 @@
-#include<cstdio> // 10830_Çà·ÄÁ¦°ö [¼öÇÐ]
+#include<cstdio> // 10830_í–‰ë ¬ì œê³± [ìˆ˜í•™]
 #include<cmath>
 #define REM 1000
 

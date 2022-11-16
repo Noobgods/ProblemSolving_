@@ -1,4 +1,4 @@
-#include <cstdio>      // 2156_Æ÷µµÁÖ½Ã½Ä [DP]
+#include <cstdio>      // 2156_í¬ë„ì£¼ì‹œì‹ [DP]
 #define max(x,y) x>y?x:y
 int N, dp[10001], A[10001];
 int main() {

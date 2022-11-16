@@ -1,4 +1,4 @@
-#include<cstdio>	// 4796_Ä·ÇÎ [¼öÇÐ]
+#include<cstdio>	// 4796 ìº í•‘ [ê·¸ë¦¬ë””]
 
 int main(){
 	for(int i=1; ;i++){

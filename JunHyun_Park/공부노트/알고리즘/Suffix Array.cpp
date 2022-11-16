@@ -1,7 +1,7 @@
 #include<cstdio>
 #include<algorithm>
 using namespace std;
-//Suffix Array ¹× LCP Array »ý¼º
+//Suffix Array  LCP Array 
 
 char tmp[200001], sa[200001], s[200001];
 int gap, n, m, o[200001];

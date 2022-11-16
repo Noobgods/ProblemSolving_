@@ -1,4 +1,4 @@
-#include<cstdio>	// 2178_╧л╥не╫╩Ж [BFS]
+#include<cstdio>	// 2178_К╞╦К║°М┐░Л┐┴ [BFS]
 #include<queue>
 using namespace std;
 int N,M, d[4][2]= {{1,0}, {0,1},{-1,0},{0,-1}},R=0;

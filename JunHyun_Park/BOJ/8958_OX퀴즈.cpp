@@ -1,4 +1,4 @@
-#include <cstdio>   // 8958_OXÄûÁî [±ÔÄ¢]
+#include <cstdio>   // 8958 OX [êµ¬í˜„]
 int N, a, s;;
 int main() {
 	char c;

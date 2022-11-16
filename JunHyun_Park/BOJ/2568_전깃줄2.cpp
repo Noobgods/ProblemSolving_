@@ -1,4 +1,4 @@
-#include<cstdio>    // 2568_전깃줄2 [DP]
+#include<cstdio>    // 2568_전깃줄2 [DP], [LIS]
 #include<algorithm>
 #include<vector>
 using namespace std;

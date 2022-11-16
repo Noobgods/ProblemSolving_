@@ -1,4 +1,4 @@
-#include<cstdio>	// 1149_RGB°Å¸® [DP]
+#include<cstdio>	// 1149_RGBê±°ë¦¬ [DP]
 int min(int x, int y){ return x<y?x:y;}
 int H[1000][3];
 int main(){

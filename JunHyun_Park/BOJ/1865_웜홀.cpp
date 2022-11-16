@@ -1,4 +1,4 @@
-#include <cstdio>   //1865_¿úÈ¦ [º§¸¸Æ÷µå]
+#include <cstdio>   //1865_ì›œí™€ [ê·¸ëž˜í”„]
 #include <vector>
 #include <tuple>
 using namespace std;

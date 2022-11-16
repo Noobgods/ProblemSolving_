@@ -1,4 +1,4 @@
-#include<cstdio>	// 16861 HarshadNumbers [¹®ÀÚ¿­], [¼öÇĞ]
+#include<cstdio>	// 16861 HarshadNumbers [ë¬¸ìì—´], [ìˆ˜í•™]
 int n, h;
 char s[11];
 int main(){

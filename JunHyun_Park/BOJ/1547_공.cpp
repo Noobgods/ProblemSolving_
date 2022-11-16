@@ -1,4 +1,4 @@
-#include<cstdio>    // 1547_°ø [±ÔÄ¢], [½Ã¹Ä·¹ÀÌ¼Ç]
+#include<cstdio>    // 1547_ê³µ [ê·œì¹™], [ì‹œë®¬ë ˆì´ì…˜]
 int main(){
 	int n, a1, a2, z=1;
 	scanf("%d", &n);

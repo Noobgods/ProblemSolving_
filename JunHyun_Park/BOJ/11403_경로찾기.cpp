@@ -1,5 +1,5 @@
-#include<cstdio>    // 11403_°æ·ÎÃ£±â [BFS], [DFS], [ÇÃ·ÎÀÌµå¿ö¼È¾Ë°í¸®Áò]
-//ÇÃ·ÎÀÌµå ¿ö¼È ¾Ë°í¸®ÁòÀ» »ç¿ëÇÏ¿© ´äÀ» ±¸ÇÔ
+#include<cstdio>    // 11403_ê²½ë¡œì°¾ê¸° [BFS], [DFS], [í”Œë¡œì´ë“œì›Œì…œì•Œê³ ë¦¬ì¦˜]
+//í”Œë¡œì´ë“œ ì›Œì…œ ì•Œê³ ë¦¬ì¦˜ì„ ì‚¬ìš©í•˜ì—¬ ë‹µì„ êµ¬í•¨
 
 int main(){
     int N;

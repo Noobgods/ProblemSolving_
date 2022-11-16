@@ -1,4 +1,4 @@
-#include <string>   // Level3_ ÀÔ±¹½É»ç [ÀÌºĞÅ½»ö]
+#include <string>   // Level3_ ì…êµ­ì‹¬ì‚¬ [ì´ë¶„íƒìƒ‰]
 #include <vector>
 #include <algorithm>
 
@@ -29,7 +29,7 @@ long long solution(int n, vector<int> times) {
 }
 
 
-// ÀÔÃâ·Â
+// ì…ì¶œë ¥
 int main(){
     int n, n_t;
     vector<int> times; 

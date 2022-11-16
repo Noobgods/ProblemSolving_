@@ -1,4 +1,4 @@
-#include <cstdio>   // 1015_¼ö¿­Á¤·Ä [Á¤·Ä]
+#include <cstdio>   // 1015_ìˆ˜ì—´ì •ë ¬ [ì •ë ¬]
 
 int main() {
 	int n;

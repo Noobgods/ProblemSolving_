@@ -1,4 +1,4 @@
-#include<cstdio>	// 15954_ÀÎÇüµé [¼öÇĞ]
+#include<cstdio>	// 15954_ì¸í˜•ë“¤ [ìˆ˜í•™]
 #include<cmath>
 #include<vector>
 #include<float.h>

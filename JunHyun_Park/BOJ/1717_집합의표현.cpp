@@ -1,4 +1,4 @@
-#include<cstdio>    // 1717_ÁıÇÕÀÇÇ¥Çö [Union-Find]
+#include<cstdio>    // 1717_ì§‘í•©ì˜í‘œí˜„ [Union-Find]
 int N, M, A[1000001], B[1000001];
 int find(int t){
    if(A[t] != t) return A[t] = find(A[t]);

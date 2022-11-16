@@ -1,4 +1,4 @@
-#include<cstdio>    // 12841_Á¤º¸´ëµî»ê [Å½»ö]
+#include<cstdio>    // 12841_ì •ë³´ëŒ€ë“±ì‚° [íƒìƒ‰]
 long long int r[100001], c[100001];
 int main() {
 	int n, i, min;

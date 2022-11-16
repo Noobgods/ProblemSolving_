@@ -1,4 +1,4 @@
-#include<cstdio>    // 1011_FlymetotheAlphaCentauri [±ÔÄ¢]
+#include<cstdio>    // 1011_FlymetotheAlphaCentauri [Ä¢]
 int main() {
 	int N;
 	scanf("%d", &N);

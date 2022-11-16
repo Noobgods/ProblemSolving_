@@ -1,4 +1,4 @@
-#include<cstdio>	// 2667_´ÜÁö¹øÈ£ºÙÀÌ±â [DFS]
+#include<cstdio>	// 2667_ë‹¨ì§€ë²ˆí˜¸ë¶™ì´ê¸° [DFS]
 #include<algorithm>
 using namespace std;
 int N, d[4][2] = {{1,0},{0,1},{-1,0},{0,-1}},R[1000], RN=0;

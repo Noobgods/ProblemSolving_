@@ -1,4 +1,4 @@
-#include<cstdio>    // 1712_¼ÕÀÍºĞ±âÁ¡ [¼öÇĞ]
+#include<cstdio>    // 1712_ì†ìµë¶„ê¸°ì  [ìˆ˜í•™]
 int A,B,C;
 int main(){
     scanf("%d %d %d",&A, &B, &C);

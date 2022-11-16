@@ -1,4 +1,4 @@
-#include <iostream> // 1924_2007³â [±¸Çö]
+#include <iostream> // 1924_2007ë…„ [êµ¬í˜„]
 using namespace std;
 char *day[7]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
 int main() {

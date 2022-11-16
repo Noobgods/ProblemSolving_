@@ -1,4 +1,4 @@
-#include<cstdio>    // 9663_N-Queen [¹éÆ®·¡Å·]
+#include<cstdio>    // 9663 N-Queen [ë°±íŠ¸ëž˜í‚¹]
 int cnt, n;
 bool p[17][17]= {false};
 bool isPos(int x, int y){

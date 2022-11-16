@@ -1,4 +1,4 @@
-#include<cstdio>    // 1992_ÄõµåÆ®¸® [ºÐÇÒÁ¤º¹]
+#include<cstdio>    // 1992_ì¿¼ë“œíŠ¸ë¦¬ [ë¶„í• ì •ë³µ]
 using namespace std;
 int N;
 bool board[65][65];

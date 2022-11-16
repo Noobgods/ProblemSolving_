@@ -1,4 +1,4 @@
-#include <cstdio>   // 1654_·£¼±ÀÚ¸£±â [ÀÌºĞÅ½»ö]
+#include <cstdio>   // 1654_ëœì„ ìë¥´ê¸° [ì´ë¶„íƒìƒ‰]
 int k, n; unsigned long long nA[10001];
 int main(){
 	unsigned long long max = 0;

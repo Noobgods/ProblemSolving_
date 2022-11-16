@@ -1,4 +1,4 @@
-#include<cstdio>	// 1356_À¯Áø¼ö [¼öÇÐ]
+#include<cstdio>	// 1356_ìœ ì§„ìˆ˜ [ìˆ˜í•™]
 char s[11];
 int l;
 int main(){

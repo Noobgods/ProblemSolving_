@@ -1,4 +1,4 @@
-#include<cstdio>    // 10250_ACMȣ�� [��Ģ]
+#include<cstdio>    // 10250_ACM호텔 [백트래킹]
 int N, w, h, c;
 int main(){
     scanf("%d ", &N);

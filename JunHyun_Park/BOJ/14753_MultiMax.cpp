@@ -1,4 +1,4 @@
-#include<cstdio>	// 14753 MultiMax [±ÔÄ¢]
+#include<cstdio>	// 14753 MultiMax [Ä¢]
 int m[4], rm[4] = { -1001, -1001, -1001}, lm[4] = {-1001, -1001, -1001}, c;
 int max(int x, int y) { return x>y?x:y;}
 int main(){

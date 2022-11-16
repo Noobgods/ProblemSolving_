@@ -1,4 +1,4 @@
-#include<cstdio>    // 10814_³ªÀÌ¼øÁ¤·Ä [Á¤·Ä]
+#include<cstdio>    // 10814_ë‚˜ì´ìˆœì •ë ¬ [ì •ë ¬]
 #include<algorithm>
 using namespace std;
 struct ACT{

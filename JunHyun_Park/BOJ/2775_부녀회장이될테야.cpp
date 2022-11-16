@@ -1,4 +1,4 @@
-#include<cstdio>    // 2775_ºÎ³àÈ¸ÀåÀÌµÉÅ×¾ß [±ÔÄ¢]
+#include<cstdio>    // 2775_ë¶€ë…€íšŒì¥ì´ë í…Œì•¼ [ê·œì¹™]
 int N;
 int f[15];
 int main(){

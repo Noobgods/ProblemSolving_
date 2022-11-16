@@ -1,4 +1,4 @@
-#include<cstdio>    // 5430_AC [¹®ÀÚ¿­Ã³¸®], [µ¦], [±ÔÄ¢]
+#include<cstdio>    // 5430_AC [ë¬¸ìì—´ì²˜ë¦¬], [ë±], [ê·œì¹™]
 #include<iostream>
 #include<string.h>
 using namespace std;

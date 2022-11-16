@@ -1,4 +1,4 @@
-#include <cstdio>   // 1920_¼öÃ£±â [ÀÌºĞÅ½»ö]
+#include <cstdio>   // 1920_ìˆ˜ì°¾ê¸° [ì´ë¶„íƒìƒ‰]
 int n, A[100000], m, mt;
 
 void sort(int l, int r);

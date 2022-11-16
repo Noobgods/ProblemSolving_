@@ -1,4 +1,4 @@
-#include <stdio.h>  // 10805_L¸ğ¾çÀÇÁ¾ÀÌÀÚ¸£±â [±¸Çö]
+#include <stdio.h>  // 10805_Lëª¨ì–‘ì˜ì¢…ì´ìë¥´ê¸° [êµ¬í˜„]
 #define min(a,b) ((a) < (b) ? (a) : (b))
  
 int L[51][51][51][51];
@@ -14,14 +14,14 @@ int func_L(int h1, int w1, int h2, int w2){
     int h3 = h1 - h2;
     int w3 = w1 - w2;
  
-    // ¼¼·Î ÀÚ¸£±â
+    // ì„¸ë¡œ ìë¥´ê¸°
     for (w = 1; w < w1; w++){
         if (w < w3) ret = min(ret, func_R(h1, w) + func_L(h1, w1 - w, h2, w2));
         else if (w > w3) ret = min(ret, func_L(h1, w, h2, w - w3) + func_R(h3, w1 - w));
         else ret = min(ret, func_R(h1, w3) + func_R(h3, w2));
     }
  
-    // °¡·Î ÀÚ¸£±â
+    // ê°€ë¡œ ìë¥´ê¸°
     for (h = 1; h < h1; h++){
         if (h < h2) ret = min(ret, func_R(h, w3) + func_L(h1 - h, w1, h2 - h, w2));
         else if (h > h2) ret = min(ret, func_L(h, w1, h2, w2) + func_R(h1 - h, w1));
@@ -36,11 +36,11 @@ int func_R(int H, int W){
  
     if (R[H][W] != 0) return R[H][W];
  
-    // ¼¼·Î ÀÚ¸£±â
+    // ì„¸ë¡œ ìë¥´ê¸°
     for (w = 1; w < W; w++)
         ret = min(ret, func_R(H, w) + func_R(H, W - w));
  
-    // °¡·Î ÀÚ¸£±â
+    // ê°€ë¡œ ìë¥´ê¸°
     for (h = 1; h < H; h++)
         ret = min(ret, func_R(h, W) + func_R(H - h, W));
  

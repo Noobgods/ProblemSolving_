@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <cstdio>	// 2579 계단오르기 [DP]
 int n, s[301], dp[301];
 int max(int x, int y){
 	return x>y?x:y;

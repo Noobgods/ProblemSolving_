@@ -1,4 +1,4 @@
-#include<cstdio>	// 1987_¾ËÆÄºª [¹éÆ®·¡Å·]
+#include<cstdio>	// 1987_ì•ŒíŒŒë²³ [ë°±íŠ¸ëž˜í‚¹]
 int R, C, max = 0;
 char s[21][21];
 bool ba[91];

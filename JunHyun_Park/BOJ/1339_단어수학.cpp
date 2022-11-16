@@ -1,6 +1,6 @@
-#include <cstdio>   // 1339_´Ü¾î¼öÇÐ [¼öÇÐ], [¹éÆ®·¡Å·]
+#include <cstdio>   // 1339_ë‹¨ì–´ìˆ˜í•™ [ìˆ˜í•™], [ë°±íŠ¸ëž˜í‚¹]
 #include <cstring>
-// ±×¸®µð/¼öÇÐÀ¸·Îµµ Ç® ¼ö ÀÖÀ½.
+// ê·¸ë¦¬ë””/ìˆ˜í•™ìœ¼ë¡œë„ í’€ ìˆ˜ ìžˆìŒ.
 
 int N, alpha[26]={-1,}, idx;
 long max;

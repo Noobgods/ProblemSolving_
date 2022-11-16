@@ -1,4 +1,4 @@
-#include<cstdio>    // 1021_ȸ���ϴ�ť [ť],[�ùķ��̼�]
+#include<cstdio>    // 1021_회전하는큐 [큐],[시뮬레이션]
 int N, M, s, front, key;
 int main(){
     int que[51];

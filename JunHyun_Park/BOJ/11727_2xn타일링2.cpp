@@ -1,4 +1,4 @@
-#include<cstdio>	// 11727 2xnŸ�ϸ�2 [DP]
+#include<cstdio>	// 11727 2xn타일링2 [DP]
 int dp[1001];
 int main(){
 	int n;

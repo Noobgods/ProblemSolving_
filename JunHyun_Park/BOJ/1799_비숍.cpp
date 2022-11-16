@@ -1,4 +1,4 @@
-#include<cstdio>	// 1799_ºñ¼ó [¹éÆ®·¡Å·]
+#include<cstdio>	// 1799_ë¹„ìˆ [ë°±íŠ¸ë˜í‚¹]
 bool visited[11][11];
 bool chess[11][11];
 int w_max =0, b_max =0, N, M;

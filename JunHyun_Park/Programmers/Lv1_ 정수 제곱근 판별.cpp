@@ -1,4 +1,4 @@
-#include <string>   // Lv1_ Á¤¼ö Á¦°ö±Ù ÆÇº° [¼öÇĞ]
+#include <string>   // Lv1_ ì •ìˆ˜ ì œê³±ê·¼ íŒë³„ [ìˆ˜í•™]
 #include <vector>
 #include <math.h>
 #include <iostream>

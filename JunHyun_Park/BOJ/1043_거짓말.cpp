@@ -1,4 +1,4 @@
-#include <cstdio>	//1043_°ÅÁþ¸» [±×·¡ÇÁ Å½»ö]
+#include <cstdio>	//1043_ [×· Å½]
 using namespace std;
 
 bool node[51][51], visit[51];

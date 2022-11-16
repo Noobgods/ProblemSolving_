@@ -1,4 +1,4 @@
-#include<cstdio>    // 2588_°ö¼À [¼öÇÐ], [±¸Çö]
+#include<cstdio>    // 2588_ê³±ì…ˆ [ìˆ˜í•™]
 int main(void){
 	int a, b;
 	int result;

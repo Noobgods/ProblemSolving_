@@ -1,4 +1,4 @@
-#include<cstdio>    // 18870_ÁÂÇ¥¾ÐÃà [Á¤·Ä]
+#include<cstdio>    // 18870_ì¢Œí‘œì••ì¶• [ì •ë ¬]
 int N;
 int arr_x[1000001], rst_idx[1000001], rst[1000001];
 

@@ -1,4 +1,4 @@
-#include<cstdio>    // 10453_¹®ÀÚ¿­º¯È¯ [Å¥]
+#include<cstdio>    // 10453_ë¬¸ìì—´ë³€í™˜ [í]
 #include<cstring>
 #include<queue>
 using namespace std;

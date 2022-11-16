@@ -1,4 +1,4 @@
-#include<cstdio>    // 5086_¹è¼ö¿Í¾à¼ö [¼öÇÐ]
+#include<cstdio>    // 5086_ë°°ìˆ˜ì™€ì•½ìˆ˜ [ìˆ˜í•™]
 using namespace std;
 int main(){
     int n, k;

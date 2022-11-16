@@ -1,4 +1,4 @@
-#include<cstdio>    // 1037_약수 [수학]
+#include<cstdio>    // 1037_ []
 
 int A,N, min=1000000000, max=0;
 int main(){

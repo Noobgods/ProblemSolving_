@@ -1,4 +1,4 @@
-#include<cstdio>    // 2217_·ÎÇÁ [±×¸®µð]
+#include<cstdio>    // 2217_ë¡œí”„ [ê·¸ë¦¬ë””]
 #include<algorithm>
 using namespace std;
 

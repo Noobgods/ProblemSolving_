@@ -1,4 +1,4 @@
-#include <cstdio>	// 2810_дех╕╢У [╠в╦╝╣П]
+#include <cstdio>	// 2810_Л╩╣М≥─К█■ [Й╣╛М≤└]
 #include <string>
 
 using namespace std;

@@ -1,4 +1,4 @@
-#include <string>   // 3663_°íµæÁ¡ [±×¸®µğ], [ºê·çÆ®Æ÷½º]
+#include <string>   // 3663_ê³ ë“ì  [ê·¸ë¦¬ë””], [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 #include <vector>
 #include <string.h>
 

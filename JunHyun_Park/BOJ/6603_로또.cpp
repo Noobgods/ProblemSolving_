@@ -1,4 +1,4 @@
-#include<cstdio>	// 6603_·Î¶Ç [¹éÆ®·¡Å·]
+#include<cstdio>	// 6603_ë¡œë˜ [ë°±íŠ¸ë˜í‚¹]
 int N, nl[13], s[6];
 bool bl[13] ={false};
 void f(int x, int y){

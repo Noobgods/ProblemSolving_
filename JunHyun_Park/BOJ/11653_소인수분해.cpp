@@ -1,4 +1,4 @@
-#include<cstdio>    // 11653_¼ÒÀÎ¼öºĞÇØ [¼öÇĞ]
+#include<cstdio>    // 11653_ì†Œì¸ìˆ˜ë¶„í•´ [ìˆ˜í•™]
 
 int N,k;
 int main(){

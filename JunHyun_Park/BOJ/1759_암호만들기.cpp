@@ -1,4 +1,4 @@
-#include<cstdio>	// 1759_¾ÏÈ£¸¸µé±â [¹éÆ®·¡Å·]
+#include<cstdio>	// 1759_ì•”í˜¸ë§Œë“¤ê¸° [ë°±íŠ¸ëž˜í‚¹]
 #include<algorithm>
 using namespace std;
 int L,C;char s[50], cs[20]="aaaaaaaaaaaaaaa\0";bool ba[18];

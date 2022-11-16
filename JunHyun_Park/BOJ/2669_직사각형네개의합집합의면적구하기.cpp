@@ -1,4 +1,4 @@
-#include<cstdio>	// 2669_流荤阿屈匙俺狼钦笼钦狼搁利备窍扁 [荐切], [备泅]
+#include<cstdio>	// 2669_歆侅偓臧來槙雱り皽鞚橅暕歆戫暕鞚橂┐鞝侁惮頃橁赴 [靾橅暀], [甑槃]
 int N, S;
 bool A[102][102];
 int main(){

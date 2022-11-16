@@ -1,5 +1,5 @@
 #include <cstdio>
-// À¯Å¬¸®µå È£Á¦¹ı
+// ìœ í´ë¦¬ë“œ í˜¸ì œë²•
 int gcd(int m, int n){
     while(n!=0){
         int r = m%n;

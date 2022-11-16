@@ -1,4 +1,4 @@
-#include <cstdio>	// 1343_Æú¸®¿À¹Ì³ë [±×¸®µğ]
+#include <cstdio>	// 1343_í´ë¦¬ì˜¤ë¯¸ë…¸ [ê·¸ë¦¬ë””]
 #include <iostream>
 #include <string>
 

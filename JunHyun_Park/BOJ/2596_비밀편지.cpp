@@ -1,4 +1,4 @@
-#include<cstdio>	// 2596_ºñ¹ĞÆíÁö [¹®ÀÚ¿­Ã³¸®]
+#include<cstdio>	// 2596_ë¹„ë°€í¸ì§€ [ë¬¸ìì—´ì²˜ë¦¬]
 #include<cstring>
 int N;
 char A[8][7] = {"000000",

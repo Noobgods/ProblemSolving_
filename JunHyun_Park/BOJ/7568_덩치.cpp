@@ -1,4 +1,4 @@
-#include<cstdio>	// 7568_µ¢Ä¡ [ºê·çÆ®Æ÷½º]
+#include<cstdio>	// 7568_ë©ì¹˜ [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 int N, n[51][3];
 int main(){
 	scanf("%d", &N);

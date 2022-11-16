@@ -1,4 +1,4 @@
-#include <cstdio>	// 11256_»çÅÁ [±×¸®µð]
+#include <cstdio>	// 11256 ì‚¬íƒ• [ê·¸ë¦¬ë””]
 #include <queue>
 #include <algorithm>
 using namespace std;

@@ -1,4 +1,4 @@
-#include<cstdio>	// 2675 ¹®ÀÚ¿­¹İº¹ [¹®ÀÚ¿­]
+#include<cstdio>	// 2675 ë¬¸ìì—´ë°˜ë³µ [ë¬¸ìì—´]
 int main(){
 	int T, R;
 	char s[21];

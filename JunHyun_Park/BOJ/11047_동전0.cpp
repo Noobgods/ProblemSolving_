@@ -1,4 +1,4 @@
-#include<cstdio>       // 11047_µ¿Àü0 [±×¸®µğ]
+#include<cstdio>       // 11047_ë™ì „0 [ê·¸ë¦¬ë””]
 int N, K, A[10],R;
 int main(){
     scanf("%d %d", &N, &K);

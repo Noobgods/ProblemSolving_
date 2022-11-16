@@ -1,4 +1,4 @@
-#include<cstdio>    // 25501_Àç±ÍÀÇ±ÍÀç [Àç±Í]
+#include<cstdio>    // 25501 ì¬ê·€ì˜ê·€ì¬ [êµ¬í˜„]
 #include<cstring>
 int N, rst;
 

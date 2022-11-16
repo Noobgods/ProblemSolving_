@@ -1,4 +1,4 @@
-#include<cstdio>    // 14502_¿¬±¸¼Ò [BFS], [DFS], [ºê·çÆ®Æ÷½º]
+#include<cstdio>    // 14502_ì—°êµ¬ì†Œ [BFS], [DFS], [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 #include<queue>
 using namespace std;
 int la[8][8], N, M, d[4][2] = {{1,0}, {0,1}, {-1,0}, {0,-1}}, vr[8][8], R=64;

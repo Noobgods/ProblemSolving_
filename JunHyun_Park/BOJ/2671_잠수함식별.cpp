@@ -1,24 +1,24 @@
-#include<cstdio> 	// 2671_Àá¼öÇÔ½Äº° [Á¤±Ô½Ä]
+#include<cstdio> 	// 2671_ì ìˆ˜í•¨ì‹ë³„ [ì •ê·œì‹]
 bool S[201], R;
 int N, idx;
 bool check1(int x){
 	// 1
 	int t = x++;
-	if(x >= N) return false;// ³¡
+	if(x >= N) return false;// ë
 
 	// 10
 	if(!S[x++]);
 	else return false;
 		
 	t = x;
-	if(x >= N) return false;// ³¡
+	if(x >= N) return false;// ë
 
 	// 100~
 	while(!S[x]){x++;}
 	if(x == t) return false;
 
 	t = x;
-	if(x >= N) return false;// ³¡
+	if(x >= N) return false;// ë
 	
 	// 100~1~
 	while(S[x]){x++;}

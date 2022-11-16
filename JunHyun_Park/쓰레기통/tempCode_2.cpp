@@ -1,16 +1,16 @@
-#include<iostream>    // 15956_¼ôÄÚµù [¹®ÀÚ¿­Ã³¸®]
+#include<iostream>    // 15956_ìˆì½”ë”© [ë¬¸ìžì—´ì²˜ë¦¬]
 #include<string>
 #include<vector>
 #include<stdlib.h>
 using namespace std;
 
-/** ¹®ÀÚ¿­ ÅäÅ« ÇÔ¼ö;
-*   @brief  ¹®ÀÚ¿­À» ¹®ÀÚ¿­·Î ÅäÅ«À» ³ª´©¾î ÁÖ´Â ÇÔ¼ö
-*   @param s_   ÅäÅ«À¸·Î ÀÚ¸¦ ¹®ÀÚ¿­ 
-*   @param k_   ±âÁØÀ¸·Î ÇÒ ¹®ÀÚ¿­ 
-*   @return vector<string> Àß·ÁÁø ¹®ÀÚ¿­ 
-*   ¹®ÀÚ¿­À» ¹Þ¾Æ ÀÓÀÇÀÇ ¹®ÀÚ¿­À» ±âÁØÀ¸·Î ÅäÅ«À» ÀÚ¸¥ ÈÄ 
-*   vector<string>À¸·Î ¹ÝÈ¯ÇÏ´Â ÇÔ¼ö 
+/** ë¬¸ìžì—´ í† í° í•¨ìˆ˜;
+*   @brief  ë¬¸ìžì—´ì„ ë¬¸ìžì—´ë¡œ í† í°ì„ ë‚˜ëˆ„ì–´ ì£¼ëŠ” í•¨ìˆ˜
+*   @param s_   í† í°ìœ¼ë¡œ ìžë¥¼ ë¬¸ìžì—´ 
+*   @param k_   ê¸°ì¤€ìœ¼ë¡œ í•  ë¬¸ìžì—´ 
+*   @return vector<string> ìž˜ë ¤ì§„ ë¬¸ìžì—´ 
+*   ë¬¸ìžì—´ì„ ë°›ì•„ ìž„ì˜ì˜ ë¬¸ìžì—´ì„ ê¸°ì¤€ìœ¼ë¡œ í† í°ì„ ìžë¥¸ í›„ 
+*   vector<string>ìœ¼ë¡œ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜ 
 */
 vector<string> strTok(string s_, string k_){
     vector<size_t> tokLocation = {0};

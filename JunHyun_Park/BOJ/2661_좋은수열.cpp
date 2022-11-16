@@ -1,5 +1,5 @@
 
-#include<cstdio>	// 2661_ÁÁÀº¼ö¿­ [¹éÆ®·¡Å·]
+#include<cstdio>	// 2661_ì¢‹ì€ìˆ˜ì—´ [ë°±íŠ¸ë˜í‚¹]
 #include<string.h>
 #include<iostream>
 using namespace std;

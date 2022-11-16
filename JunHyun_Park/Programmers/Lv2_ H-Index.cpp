@@ -1,4 +1,4 @@
-#include <string>   // Level2_ H-Index [Á¤·Ä]
+#include <string>   // Level2_ H-Index []
 #include <vector>
 #include <algorithm>
 

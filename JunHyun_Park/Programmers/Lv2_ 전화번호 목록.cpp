@@ -1,4 +1,4 @@
-#include <string>   // Level2_ ÀüÈ­¹øÈ£ ¸ñ·Ï [ÇØ½¬]
+#include <string>   // Level2_ ì „í™”ë²ˆí˜¸ ëª©ë¡ [í•´ì‰¬]
 #include <vector>
 
 using namespace std;

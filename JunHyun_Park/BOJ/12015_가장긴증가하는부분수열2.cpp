@@ -1,4 +1,4 @@
-#include<cstdio>    // 12015_╟║юЕ╠ДаУ╟║го╢б╨н╨п╪Ж©╜2 [DP], [LIS]
+#include<cstdio>    // 12015_Й╟─Л·╔Й╦╢Л╕²Й╟─М∙≤К┼■К╤─К╤└Л┬≤Л≈╢2 [DP], [LIS]
 #include<vector>
 using namespace std;
 #define max(x,y) x>y?x:y

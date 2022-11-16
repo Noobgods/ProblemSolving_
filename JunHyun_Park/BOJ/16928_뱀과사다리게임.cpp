@@ -1,4 +1,4 @@
-#include <cstdio>   // 16928_¹ì°ú»ç´Ù¸®°ÔÀÓ [BFS]
+#include <cstdio>   // 16928_ë±€ê³¼ì‚¬ë‹¤ë¦¬ê²Œìž„ [BFS]
 #include <queue>
 using namespace std;
 

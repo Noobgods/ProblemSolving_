@@ -1,4 +1,4 @@
-#include<cstdio>	// 11070_ÇÇÅ¸°í¶ó½º±â´ñ°ª [¼öÇĞ]
+#include<cstdio>	// 11070_í”¼íƒ€ê³ ë¼ìŠ¤ê¸°ëŒ“ê°’ [ìˆ˜í•™]
 int T, n, m, a,b,p,q;
 int main(){
 	scanf("%d", &T);

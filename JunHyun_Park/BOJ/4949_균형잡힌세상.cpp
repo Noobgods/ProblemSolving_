@@ -1,4 +1,4 @@
-#include<iostream>  // 4949_±ÕÇüÀâÈù¼¼»ó [½ºÅÃ]
+#include<iostream>  // 4949 ê· í˜•ì¡íŒì„¸ìƒ [ìŠ¤íƒ]
 #include<string>
 using namespace std;
 

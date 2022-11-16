@@ -1,4 +1,4 @@
-#include<cstdio>   // 10162_ÀüÀÚ·¹ÀÎÁö [±¸Çö]
+#include<cstdio>   // 10162_ì „ìë ˆì¸ì§€ [êµ¬í˜„]
 
 int main() {
 	int T;

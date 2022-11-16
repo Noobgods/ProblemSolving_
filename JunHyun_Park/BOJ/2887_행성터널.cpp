@@ -1,4 +1,4 @@
-#include <cstdio>    // 2887_青己磐澄 [弥家脚厘飘府], [沥纺]
+#include <cstdio>    // 2887_頄夓劚韯半剱 [斓滌唽鞁犾灔韸鸽Μ], [鞝曤牞]
 #include <algorithm>
 using namespace std;
 

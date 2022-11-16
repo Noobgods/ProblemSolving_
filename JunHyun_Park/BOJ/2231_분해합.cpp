@@ -1,4 +1,4 @@
-#include<cstdio>	// 2231_ºÐÇØÇÕ [ºê·çÆ®Æ÷½º]
+#include<cstdio>	// 2231_ë¶„í•´í•© [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 #define p(x,y) x>=y?x-100:0
 int main(){
 	int N, i, s=0;

@@ -1,4 +1,4 @@
-#include <cstdio>   // 1260_DFS?BFS [DFS], [BFS]
+#include <cstdio>   // 1260_DFS와BFS [DFS], [BFS]
 #include <queue>
 #include <string.h>
 using namespace std;

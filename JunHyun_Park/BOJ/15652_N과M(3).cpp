@@ -1,4 +1,4 @@
-#include<cstdio>	// 15651_N°úM(3) [¹éÆ®·¡Å·]
+#include<cstdio>	// 15651_Nê³¼M(3) [ë°±íŠ¸ëž˜í‚¹]
 int n,m;
 char a[16]="1 1 1 1 1 1 1 1";
 void f(int x){

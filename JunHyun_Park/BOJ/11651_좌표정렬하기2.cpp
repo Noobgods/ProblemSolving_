@@ -1,4 +1,4 @@
-#include<cstdio>	// 11651_ÁÂÇ¥Á¤·ÄÇÏ±â2 [Á¤·Ä]
+#include<cstdio>	// 11651_ì¢Œí‘œì •ë ¬í•˜ê¸°2 [ì •ë ¬]
 int p[100001][2], n;
 
 void swap(int x, int y, int i){

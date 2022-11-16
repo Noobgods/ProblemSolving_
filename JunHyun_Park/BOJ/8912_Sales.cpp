@@ -1,4 +1,4 @@
-#include<cstdio>    // 8912_Sales [±ÔÄ¢]
+#include<cstdio>    // 8912 Sales [êµ¬í˜„]
 int T, n, a[1001], b[3], r;
 int main(){
 	scanf("%d", &T);

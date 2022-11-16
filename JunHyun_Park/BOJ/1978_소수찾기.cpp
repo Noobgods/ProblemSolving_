@@ -1,4 +1,4 @@
-#include<cstdio>    // 1978_¼Ò¼öÃ£±â [¼Ò¼ö], [¼öÇÐ]
+#include<cstdio>    // 1978_ì†Œìˆ˜ì°¾ê¸° [ì†Œìˆ˜], [ìˆ˜í•™]
 bool prime[1001] = {true, true};
 int N, R;
 void eratos(int n){

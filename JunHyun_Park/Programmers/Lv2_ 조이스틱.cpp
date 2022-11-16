@@ -1,4 +1,4 @@
-#include <string>   // Level2_ Á¶ÀÌ½ºÆ½ [±×¸®µğ]
+#include <string>   // Level2_ ì¡°ì´ìŠ¤í‹± [ê·¸ë¦¬ë””]
 #include <vector>
 #include <string.h>
 

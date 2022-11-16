@@ -1,4 +1,4 @@
-#include<cstdio>	// 2606 ¹ÙÀÌ·¯½º [±×·¡ÇÁ]
+#include<cstdio>	// 2606 ë°”ì´ëŸ¬ìŠ¤ [ê·¸ë˜í”„]
 #include<stack>
 using namespace std;
 int C, N, S=0;

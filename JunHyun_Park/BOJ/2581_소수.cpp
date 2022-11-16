@@ -1,4 +1,4 @@
-#include<cstdio>    // 2581_¼Ò¼ö [¼Ò¼ö], [¼öÇÐ]
+#include<cstdio>    // 2581_ì†Œìˆ˜ [ì†Œìˆ˜], [ìˆ˜í•™]
 int N, M, s, r = -1;
 bool prime[10001] ={true, true};
 void eratos(int n){

@@ -1,4 +1,4 @@
-#include<cstdio>    // 14501_Επ»η [DP]
+#include<cstdio>    // 14501 ν‡΄μ‚¬ [DP]
 #define max(x,y) x>y?x:y
 int DP[1001], A[2], N, M;
 int main(){

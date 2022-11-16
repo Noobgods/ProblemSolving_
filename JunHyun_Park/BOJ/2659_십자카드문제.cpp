@@ -1,4 +1,4 @@
-#include<cstdio>    // 2659_½ÊÀÚÄ«µå¹®Á¦ [DFS]
+#include<cstdio>    // 2659_ì‹­ìì¹´ë“œë¬¸ì œ [DFS]
 #include<list>
 #include<algorithm>
 using namespace std;

@@ -40,7 +40,7 @@ string f(string order){
 	return ord;
 }
 void solution(int numOfOrder, string *orderArr) {
-	// TODO: ÀÌ°÷¿¡ ÄÚµå¸¦ ÀÛ¼ºÇÏ¼¼¿ä. Ãß°¡·Î ÇÊ¿äÇÑ ÇÔ¼ö¿Í Àü¿ªº¯¼ö¸¦ ¼±¾ğÇØ¼­ »ç¿ëÇÏ¼Åµµ µË´Ï´Ù.
+	// TODO: ì´ê³³ì— ì½”ë“œë¥¼ ì‘ì„±í•˜ì„¸ìš”. ì¶”ê°€ë¡œ í•„ìš”í•œ í•¨ìˆ˜ì™€ ì „ì—­ë³€ìˆ˜ë¥¼ ì„ ì–¸í•´ì„œ ì‚¬ìš©í•˜ì…”ë„ ë©ë‹ˆë‹¤.
 	for(int i=0; i<numOfOrder; i++){
 		cout << f(orderArr[i]) << endl;
 

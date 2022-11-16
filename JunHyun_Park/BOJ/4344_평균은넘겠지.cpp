@@ -1,4 +1,4 @@
-#include <cstdio>   // 4344_Æò±ÕÀº³Ñ°ÚÁö [¼öÇĞ]
+#include <cstdio>   // 4344_í‰ê· ì€ë„˜ê² ì§€ [ìˆ˜í•™]
 int n, x;
 int main() {
     scanf("%d", &n);

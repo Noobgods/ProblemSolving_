@@ -1,4 +1,4 @@
-#include<cstdio>    // 1158_炼技欺胶巩力 [傅农靛府胶飘], [钮]
+#include<cstdio>    // 1158_臁办劯韻检姢氍胳牅 [毵來伂霌滊Μ鞀ろ姼], [韥怾
 int N, M, queue[5001];
 int main(){
     scanf("%d %d", &N, &M);

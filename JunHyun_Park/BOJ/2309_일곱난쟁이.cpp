@@ -1,4 +1,4 @@
-#include<iostream>	// 2309_ÀÏ°ö³­ÀïÀÌ [ºê·çÆ®Æ÷½º]
+#include<iostream>	// 2309_ì¼ê³±ë‚œìŸì´ [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 using namespace std;
 
 void swap(int *dwarf);

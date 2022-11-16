@@ -1,4 +1,4 @@
-#include <string>   // Level3_ °¡Àå ¸Õ ³ëµå [BFS]
+#include <string>   // Level3_ ê°€ìž¥ ë¨¼ ë…¸ë“œ [BFS]
 #include <vector>
 #include <algorithm>
 #include <queue>
@@ -52,7 +52,7 @@ int solution(int n, vector<vector<int>> edge) {
     return answer;
 }
 
-// ÀÔÃâ·Â
+// ìž…ì¶œë ¥
 int main(){
     int n, k;
     vector<vector<int>> edge;

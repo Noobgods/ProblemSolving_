@@ -1,4 +1,4 @@
-#include <cstdio>   //11657_Å¸ÀÓ¸Ó½Å [º§¸¸Æ÷µå]
+#include <cstdio>   //11657_íƒ€ì„ë¨¸ì‹  [ë²¨ë§Œí¬ë“œ]
 #define INF 10000000000
 int N, M, node[6001][3];
 long long city[501];

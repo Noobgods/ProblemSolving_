@@ -12,7 +12,7 @@ namespace Algorithm{
                 std::cout<<i.first <<" " <<i.second<<endl;
             }
         };
-        /* À§¿Í °°À½
+        /* ìœ„ì™€ ê°™ìŒ
         for(auto i = A.begin(); i!= A.end(); i++){
             std::cout<< i->first <<" " <<i->second << endl;
         }
@@ -38,7 +38,7 @@ int main(){
     A = make_unique<vector<Algorithm::temp<int, string>>>();
 
     for(int i=0;i<10; i++){
-        A->push_back(Algorithm::temp<int, string>(i, "¿Í¿ì"));
+        A->push_back(Algorithm::temp<int, string>(i, "ì™€ìš°"));
     }
     
     Algorithm::print(*A);

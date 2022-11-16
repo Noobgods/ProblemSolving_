@@ -1,4 +1,4 @@
-#include <string>   // Level2_ ��ųƮ�� [ť]
+#include <string>   // Level2_ 스킬트리 [큐]
 #include <vector>
 #include <string.h>
 #include <queue>

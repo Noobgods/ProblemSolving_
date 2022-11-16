@@ -1,4 +1,4 @@
-#include <string>   // Level1_ е╘╥╧юн юнгЭ╩л╠Б ╟тюс [╫╨ец]
+#include <string>   // Level1_ М│╛К═┬Л²╦ Л²╦М≤∙К╫▒Й╦╟ Й╡▄Л·└ [Л┼╓М┐²]
 #include <vector>
 #include <stack>
 

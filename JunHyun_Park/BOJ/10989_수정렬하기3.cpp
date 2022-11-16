@@ -1,4 +1,4 @@
-#include<cstdio>    // 10989_¼öÁ¤·ÄÇÏ±â [Á¤·Ä]
+#include<cstdio>    // 10989_ìˆ˜ì •ë ¬í•˜ê¸° [ì •ë ¬]
 #include<vector>
 using namespace std;
 

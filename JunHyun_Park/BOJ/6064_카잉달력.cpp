@@ -1,4 +1,4 @@
-#include<cstdio>    // 6064_Ä«À×´Þ·Â [±ÔÄ¢], [¼öÇÐ]
+#include<cstdio>    // 6064_ì¹´ìž‰ë‹¬ë ¥ [ê·œì¹™], [ìˆ˜í•™]
 int Z;
 int gcd(int x, int y){
     if(y == 0)

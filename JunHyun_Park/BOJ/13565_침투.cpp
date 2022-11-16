@@ -1,4 +1,4 @@
-#include<cstdio>	// 13565 Ä§Åõ [±¸Çö], [BFS]
+#include<cstdio>	// 13565 ì¹¨íˆ¬ [ê·¸ëž˜í”„], [BFS]
 int M, N, i, j;
 bool map[1002][1002], s;
 void go(int x, int y){

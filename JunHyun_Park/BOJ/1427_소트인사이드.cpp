@@ -1,4 +1,4 @@
-#include<iostream>  // 1426_¼ÒÆ®ÀÎ»çÀÌµå [Á¤·Ä]
+#include<iostream>  // 1426_ì†ŒíŠ¸ì¸ì‚¬ì´ë“œ [ì •ë ¬]
 using namespace std;
 
 int num[10], n;

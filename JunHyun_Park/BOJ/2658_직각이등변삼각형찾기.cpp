@@ -1,4 +1,4 @@
-#include<cstdio>	// 2658_�����̵�ﰢ��ã�� [����]
+#include<cstdio>	// 2658_직각이등변삼각형찾기 [구현]
 #include<cstring>
 
 bool A[12][12],R;

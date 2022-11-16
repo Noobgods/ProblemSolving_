@@ -1,4 +1,4 @@
-#include<cstdio>    // 11399_ATM [±×¸®µð]
+#include<cstdio>    // 11399 ATM [ê·¸ë¦¬ë””]
 #include<algorithm>
 using namespace std;
 

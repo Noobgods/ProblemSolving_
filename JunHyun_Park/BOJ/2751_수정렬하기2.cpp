@@ -1,4 +1,4 @@
-#include <cstdio>   // 2751_¼öÁ¤·ÄÇÏ±â2 [Á¤·Ä]
+#include <cstdio>   // 2751_ìˆ˜ì •ë ¬í•˜ê¸°2 [ì •ë ¬]
 int n, max, min = 1000001;
 char arr[2000001] = {false,};
 

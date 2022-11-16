@@ -1,4 +1,4 @@
-#include <cstdio>   // 14002_°¡Àå±äÁõ°¡ÇÏ´ÂºÎºĞ¼ö¿­4.cpp
+#include <cstdio>   // 14002_ê°€ì¥ê¸´ì¦ê°€í•˜ëŠ”ë¶€ë¶„ìˆ˜ì—´4 [DP], [LIS]
 
 int n, z, dp[1001], A[1001],list[1001];
 void print(int x){

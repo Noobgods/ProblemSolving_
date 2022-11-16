@@ -1,4 +1,4 @@
-#include <cstdio>   // 1789_¼öµéÀÇÇÕ [¼öÇĞ]
+#include <cstdio>   // 1789_ìˆ˜ë“¤ì˜í•© [ìˆ˜í•™]
 #include <math.h>
 long long int s;
 int main(){

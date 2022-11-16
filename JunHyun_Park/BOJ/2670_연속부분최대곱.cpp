@@ -1,4 +1,4 @@
-#include<cstdio>	// 2670_¿¬¼ÓºÎºĞÃÖ´ë°ö [DP]
+#include<cstdio>	// 2670_ì—°ì†ë¶€ë¶„ìµœëŒ€ê³± [DP]
 #include<math.h>
 int N;
 double A[10000], DP[10000];

@@ -1,4 +1,4 @@
-#include <string>   // Level2_ Ä«Æê [¿ÏÀüÅ½»ö]   
+#include <string>   // Level2_ ì¹´íŽ« [ì •ë ¬]   
 #include <vector>
 
 #include <iostream>
@@ -28,7 +28,7 @@ vector<int> solution(int brown, int yellow) {
     return answer;
 }
 
-// ÀÔÃâ·Â
+// 
 int main(){
     int brown, yellow;
     cin >> brown >> yellow;

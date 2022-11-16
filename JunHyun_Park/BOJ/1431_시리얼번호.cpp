@@ -1,4 +1,4 @@
-#include<cstdio>	// 1431_½Ã¸®¾ó¹øÈ£ [Á¤·Ä],[ÆÄ½Ì]
+#include<cstdio>	// 1431_ì‹œë¦¬ì–¼ë²ˆí˜¸ [ì •ë ¬],[íŒŒì‹±]
 #include<cstring>
 #include<algorithm>
 #define MAXSIZE 1001
@@ -37,8 +37,8 @@ bool compare(str x, str y){
 	}
 }
 
-// ¾Æ´Ï ¿Ö ¾ÈµÇ´Â °Çµ¥¿ä..? 
-/* Äü ¼ÒÆ®
+// ì•„ë‹ˆ ì™œ ì•ˆë˜ëŠ” ê±´ë°ìš”..? 
+/* í€µ ì†ŒíŠ¸
 void swap(int x, int y){
 	str tc; 
 	tc = S[x];
@@ -57,7 +57,7 @@ void qsort(int first, int last, bool (*compare)(str,str)){
 	if(i < last) qsort(i, last, compare);
 }
 */
-/* ¸ÓÁö ¼ÒÆ®
+/* ë¨¸ì§€ ì†ŒíŠ¸
 void merge(int left, int mid, int right, bool (*compare)(str,str)){
 	int i= left, j=mid+1, k= left;
 	str sorted[MAXSIZE];

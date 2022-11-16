@@ -1,4 +1,4 @@
-#include<cstdio>    // 14697_¹æ¹èÁ¤ÇÏ±â [ºê·çÆ®Æ÷½º]
+#include<cstdio>    // 14697_ë°©ë°°ì •í•˜ê¸° [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 int A[3],N, x, y, z;
 int main(){
     scanf("%d %d %d %d", A, A+1, A+2 ,&N);

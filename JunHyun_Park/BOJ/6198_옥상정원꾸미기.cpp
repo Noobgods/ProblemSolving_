@@ -1,4 +1,4 @@
-#include <cstdio>	//6198_¿Á»óÁ¤¿ø²Ù¹Ì±â [½ºÅÃ]
+#include <cstdio>	//6198_ì˜¥ìƒì •ì›ê¾¸ë¯¸ê¸° [ìŠ¤íƒ]
 #include <stack>
 #include <iostream>
 using namespace std;

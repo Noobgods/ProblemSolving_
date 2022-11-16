@@ -1,4 +1,4 @@
-#include<cstdio>    // 1085_Á÷»ç°¢Çü¿¡¼­Å»Ãâ [¼öÇĞ]
+#include<cstdio>    // 1085_ì§ì‚¬ê°í˜•ì—ì„œíƒˆì¶œ [ìˆ˜í•™]
 int C(int x,int y){
     return x<y?x:y;
 }

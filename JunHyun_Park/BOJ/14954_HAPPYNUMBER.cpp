@@ -1,4 +1,4 @@
-#include<cstdio>	// 14954_HAPPYNUMBER [±ÔÄ¢]
+#include<cstdio>	// 14954 HAPPYNUMBER [ìˆ˜í•™]
 int f(int n){
 	char a[11];int r=0;
 	sprintf(a,"%d",n);

@@ -1,4 +1,4 @@
-#include<cstdio>    // 3036_¸µ [¼öÇĞ]
+#include<cstdio>    // 3036 ë§ [ìˆ˜í•™]
 using namespace std;
 int N, R[101];
 int gcd(int m, int n){

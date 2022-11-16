@@ -1,4 +1,4 @@
-#include<cstdio>    // 11687_ÆÑÅä¸®¾ó0ÀÇ°³¼ö [¼öÇĞ], [Á¶ÇÕ]
+#include<cstdio>    // 11687_íŒ©í† ë¦¬ì–¼0ì˜ê°œìˆ˜ [ìˆ˜í•™], [ì¡°í•©]
 
 long long int N;
 long long int f(long long int n){

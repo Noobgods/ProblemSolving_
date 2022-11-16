@@ -1,4 +1,4 @@
-#include<cstdio>    // 3053_ÅÃ½Ã±âÇÏÇÐ [¼öÇÐ], [±âÇÏ ¾Ë°í¸®Áò], [±¸Çö]
+#include<cstdio>    // 3053_íƒì‹œê¸°í•˜í•™ [ìˆ˜í•™], [ê¸°í•˜ ì•Œê³ ë¦¬ì¦˜], [êµ¬í˜„]
 #include<math.h>
 #define PI 3.141592653589793
 

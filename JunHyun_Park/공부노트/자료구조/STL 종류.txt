@@ -1,40 +1,40 @@
 - Vector
-    µ¿Àû¹è¿­
+    ë™ì ë°°ì—´
 
 - Array
-    Á¤Àû¹è¿­
+    ì •ì ë°°ì—´
 
 - ForwardList
-    ´Ü¼ø¿¬°á¸®½ºÆ®
+    ë‹¨ìˆœì—°ê²°ë¦¬ìŠ¤íŠ¸
 
 - List
-    ÀÌÁß¿¬°á¸®½ºÆ®
+    ì´ì¤‘ì—°ê²°ë¦¬ìŠ¤íŠ¸
 
 - Stack
-    ½ºÅÃ
+    ìŠ¤íƒ
 
 - Queue
-    Å¥
+    í
 
 - Deque
-    µ¦ (¾ç¹æÇâ Å¥)
+    ë± (ì–‘ë°©í–¥ í)
     
 - Priority Queue
-    Èü
-    Á¤·ÄO + ºñ±³ÇÔ¼ö
+    íž™
+    ì •ë ¬O + ë¹„êµí•¨ìˆ˜
 
 - Map / MultiMap
-    Key/Value ÀÌÁøÆ®¸®
-    Á¤·ÄO + (Áßº¹Çã¿ëX / Áßº¹Çã¿ëO)
+    Key/Value ì´ì§„íŠ¸ë¦¬
+    ì •ë ¬O + (ì¤‘ë³µí—ˆìš©X / ì¤‘ë³µí—ˆìš©O)
 
 - Set / MultiSet
-    ¿ø¼Ò ÀÌÁøÆ®¸®
-    Á¤·ÄO + (Áßº¹Çã¿ëX / Áßº¹Çã¿ëO)
+    ì›ì†Œ ì´ì§„íŠ¸ë¦¬
+    ì •ë ¬O + (ì¤‘ë³µí—ˆìš©X / ì¤‘ë³µí—ˆìš©O)
 
 - Unordered Map / Unordered MultiMap
-    key/Value ÇØ½ÃÅ×ÀÌºí
-    Á¤·ÄX + (Áßº¹Çã¿ëX / Áßº¹Çã¿ëO)
+    key/Value í•´ì‹œí…Œì´ë¸”
+    ì •ë ¬X + (ì¤‘ë³µí—ˆìš©X / ì¤‘ë³µí—ˆìš©O)
 
 - Unordered Set / Unordered MultiSet
-    ¿ø¼Ò ÇØ½ÃÅ×ÀÌºí
-    Á¤·ÄX + (Áßº¹Çã¿ëX / Áßº¹Çã¿ëO)
+    ì›ì†Œ í•´ì‹œí…Œì´ë¸”
+    ì •ë ¬X + (ì¤‘ë³µí—ˆìš©X / ì¤‘ë³µí—ˆìš©O)

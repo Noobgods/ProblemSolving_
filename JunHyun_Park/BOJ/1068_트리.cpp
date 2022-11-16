@@ -1,4 +1,4 @@
-#include<cstdio>    // 1068_Æ®¸® [Æ®¸®]
+#include<cstdio>    // 1068_íŠ¸ë¦¬ [íŠ¸ë¦¬]
 #include<list>
 using namespace std;
 

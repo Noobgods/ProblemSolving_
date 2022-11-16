@@ -1,4 +1,4 @@
-#include<cstdio>	// 15652_N°úM(4) [¹éÆ®·¡Å·]
+#include<cstdio>	// 15652_Nê³¼M(4) [ë°±íŠ¸ëž˜í‚¹]
 int n,m;
 bool v[9];
 char a[16]="0 0 0 0 0 0 0 0";

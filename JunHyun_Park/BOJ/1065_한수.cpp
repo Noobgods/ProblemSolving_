@@ -1,4 +1,4 @@
-#include <cstdio>   // 1065_ÇÑ¼ö [ºê·çÆ®Æ÷½º], [Å½»ö]
+#include <cstdio>   // 1065_í•œìˆ˜ [ë¸Œë£¨íŠ¸í¬ìŠ¤], [íƒìƒ‰]
 int N, s;
 int seq(int a) {
 	int q[3];

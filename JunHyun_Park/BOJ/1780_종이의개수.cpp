@@ -1,4 +1,4 @@
-#include<cstdio>    // 1780_Á¾ÀÌÀÇ°³¼ö [ºĞÇÒÁ¤º¹]
+#include<cstdio>    // 1780_ì¢…ì´ì˜ê°œìˆ˜ [ë¶„í• ì •ë³µ]
 using namespace std;
 int N, S[3];
 int board[2188][2188];

@@ -1,4 +1,4 @@
-#include<iostream>	// 10384_ÆÒ±×·¥ [¹®ÀÚ]
+#include<iostream>	// 10384 íŒ¬ê·¸ëž¨ [êµ¬í˜„]
 #include<cstdio>
 using namespace std;
 char s[2000], A[26], r;

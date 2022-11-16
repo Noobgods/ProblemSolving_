@@ -1,4 +1,4 @@
-#include<cstdio>    // 11050_ÀÌÇ×°è¼ö1 [¼öÇĞ]
+#include<cstdio>    // 11050_ì´í•­ê³„ìˆ˜1 [ìˆ˜í•™]
 int N, K;
 int fact(int n){
     if(n<=1) return 1;

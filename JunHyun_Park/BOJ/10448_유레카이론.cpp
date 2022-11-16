@@ -1,4 +1,4 @@
-#include<cstdio>	// 10448 À¯·¹Ä«ÀÌ·Ğ [ºê·çÆ®Æ÷½º]
+#include<cstdio>	// 10448 ìœ ë ˆì¹´ì´ë¡  [ë¸Œë£¨íŠ¸í¬ìŠ¤]
 int T, N, i, j, k, tree[45];
 int main(){
 	for(i = 1; i<=44; i++)

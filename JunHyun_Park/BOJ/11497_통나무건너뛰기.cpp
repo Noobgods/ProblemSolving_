@@ -1,4 +1,4 @@
-#include <cstdio>	// 11497_Åë³ª¹«°Ç³Ê¶Ù±â [±×¸®µð]
+#include <cstdio>	// 11497_í†µë‚˜ë¬´ê±´ë„ˆë›°ê¸° [ê·¸ë¦¬ë””]
 #include <vector>
 #include <algorithm>
 using namespace std;

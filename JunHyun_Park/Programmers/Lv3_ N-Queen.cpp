@@ -1,4 +1,4 @@
-#include <string>   // Level3_ N-Queen [¹éÆ®·¡Å·]
+#include <string>   // Level3_ N-Queen [ë°±íŠ¸ëž˜í‚¹]
 #include <vector>
 
 using namespace std;

@@ -1,4 +1,4 @@
-#include <cstdio>   // 1003_ÇÇº¸³ªÄ¡ÇÔ¼ö [DP]
+#include <cstdio>   // 1003_í”¼ë³´ë‚˜ì¹˜í•¨ìˆ˜ [DP]
 int n, z, fib[41] = { 0, 1 };
 int fibonacci(int n) {
 	if (fib[n] > 0)

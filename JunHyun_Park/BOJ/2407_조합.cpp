@@ -1,4 +1,4 @@
-#include<cstdio>	// 2407_Á¶ÇÕ [¼öÇÐ][±¸Çö]
+#include<cstdio>	// 2407_ì¡°í•© [ìˆ˜í•™][êµ¬í˜„]
 char f[2][101][160];
 int N, K;
 int main(){

@@ -1,4 +1,4 @@
-#include<cstdio>    // 2447_º°Âï±â10 [Àç±Í]
+#include<cstdio>    // 2447_ë³„ì°ê¸°10 [ë¶„í• ì •ë³µ]
 #include<cmath>
 int N;
 bool board[6562][6562];

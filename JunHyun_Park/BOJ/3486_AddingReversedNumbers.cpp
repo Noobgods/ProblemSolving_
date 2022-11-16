@@ -1,4 +1,4 @@
-#include<cstdio>	// 3486 AddingReversedNumbers [¹®ÀÚ¿­]
+#include<cstdio>	// 3486 AddingReversedNumbers [ìˆ˜í•™], [ë¬¸ìì—´]
 #include<cstring>
 #include<cstdlib>
 int T, n_1, n_2;

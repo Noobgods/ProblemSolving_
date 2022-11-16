@@ -1,4 +1,4 @@
-#include<cstdio>	//1167_Æ®¸®ÀÇ Áö¸§ [DFS], [Æ®¸®]
+#include<cstdio>	//1167_íŠ¸ë¦¬ì˜ ì§€ë¦„ [DFS], [íŠ¸ë¦¬]
 #include<vector>
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include<cstdio>    // 2668_¼ıÀÚ°í¸£±â [DFS]
+#include<cstdio>    // 2668_ìˆ«ìê³ ë¥´ê¸° [DFS]
 using namespace std;
 
 int N, A[102], S;

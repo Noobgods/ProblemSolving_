@@ -1,4 +1,4 @@
-#include <cstdio>   // 1874_½ºÅÃ¼ö¿­ [½ºÅÃ]
+#include <cstdio>   // 1874_ìŠ¤íƒìˆ˜ì—´ [ìŠ¤íƒ]
 int N, stack[100001], seq[100001];
 char str[200001];
 int main(){

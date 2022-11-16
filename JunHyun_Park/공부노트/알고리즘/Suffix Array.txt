@@ -1,14 +1,14 @@
  https://www.crocus.co.kr/613
- ¸Ç¹ö ¸¶ÀÌ¾î½º ¾Ë°í¸®Áò (Manber-Myers Algorithm)
- : O(nlog^2n) À¸·Î µ¿ÀÛÇÏ´Â suffix array¸¦ ±¸ÇÏ±â À§ÇÑ ¾Ë°í¸®Áò
+ ë§¨ë²„ ë§ˆì´ì–´ìŠ¤ ì•Œê³ ë¦¬ì¦˜ (Manber-Myers Algorithm)
+ : O(nlog^2n) ìœ¼ë¡œ ë™ì‘í•˜ëŠ” suffix arrayë¥¼ êµ¬í•˜ê¸° ìœ„í•œ ì•Œê³ ë¦¬ì¦˜
  
-Ã¹ 1,2,4,8 ... 2^n ±ÛÀÚ¸¦ ±âÁØÀ¸·Î Á¤·ÄÇÏ´Â ¹æ½Ä
-log n ¹øÀÇ Á¤·Ä ÈÄ ¿øÇÏ´Â Á¢¹Ì»ç ¹è¿­À» ¾ò´Â´Ù.
+ì²« 1,2,4,8 ... 2^n ê¸€ìë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬í•˜ëŠ” ë°©ì‹
+log n ë²ˆì˜ ì •ë ¬ í›„ ì›í•˜ëŠ” ì ‘ë¯¸ì‚¬ ë°°ì—´ì„ ì–»ëŠ”ë‹¤.
 
-banana | a       ]         |  a       ] a ±âÁØ   |  a       ] a
-anana  | ana     ] a ±âÁØ  |  ana     }          |  ana     ] ana
-nana   | anana   ]         |  anana   } an ±âÁØ  |  anana   ] anan
-ana    | banana  } b ±âÁØ  |  banana  ) ba ±âÁØ  |  banana  ] bana
+banana | a       ]         |  a       ] a ê¸°ì¤€   |  a       ] a
+anana  | ana     ] a ê¸°ì¤€  |  ana     }          |  ana     ] ana
+nana   | anana   ]         |  anana   } an ê¸°ì¤€  |  anana   ] anan
+ana    | banana  } b ê¸°ì¤€  |  banana  ) ba ê¸°ì¤€  |  banana  ] bana
 na     | nana    )         |  nana    ]          |  na      ] na
-a      | na      ) n ±âÁØ  |  na      ] na ±âÁØ  |  nana    ] nana
+a      | na      ) n ê¸°ì¤€  |  na      ] na ê¸°ì¤€  |  nana    ] nana
 

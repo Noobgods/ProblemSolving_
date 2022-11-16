@@ -1,4 +1,4 @@
-#include<cstdio>    // 1202_º¸¼®µµµÏ [±×¸®µğ] [Á¤·Ä] [ÀÚ·á±¸Á¶]
+#include<cstdio>    // 1202_ë³´ì„ë„ë‘‘ [ê·¸ë¦¬ë””] [ì •ë ¬] [ìë£Œêµ¬ì¡°]
 #include<vector>
 #include<algorithm>
 #include<queue>

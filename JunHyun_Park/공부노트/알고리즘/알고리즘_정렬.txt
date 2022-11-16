@@ -1,14 +1,14 @@
 Counting Sort :
- ÇØ´ç ¼ö°¡ ÀÖ´Â¸¸Å­ ÇØ´ç ¹è¿­ÀÇ À§Ä¡¿¡ ¼ö¸¦ °¡»êÇÔ
-ÀåÁ¡ : Áßº¹°ªÀÌ ¸¹ÀÌ ÀÖ´Â ¹è¿­¿¡ È¿°úÀû
+ í•´ë‹¹ ìˆ˜ê°€ ìžˆëŠ”ë§Œí¼ í•´ë‹¹ ë°°ì—´ì˜ ìœ„ì¹˜ì— ìˆ˜ë¥¼ ê°€ì‚°í•¨
+ìž¥ì  : ì¤‘ë³µê°’ì´ ë§Žì´ ìžˆëŠ” ë°°ì—´ì— íš¨ê³¼ì 
  
-Radix Sort : O(n*log 2n) Á¤·Ä ±â·Ï ÇÏÇÑ¼± ±ú´Â À¯ÀÏÇÑ ¹æ¹ý Best : O(n)
- ÀÚ¸®¼ö¿¡ ÀÖ´Â ¼ö¸¦ ±âÁØÀ¸·Î Á¤·Ä
-ÀåÁ¡ : Á¦ÇÑÀûÀÌÁö¸¸ ¼Óµµ°¡ °¡Àå ºü¸§
+Radix Sort : O(n*log 2n) ì •ë ¬ ê¸°ë¡ í•˜í•œì„  ê¹¨ëŠ” ìœ ì¼í•œ ë°©ë²• Best : O(n)
+ ìžë¦¬ìˆ˜ì— ìžˆëŠ” ìˆ˜ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬
+ìž¥ì  : ì œí•œì ì´ì§€ë§Œ ì†ë„ê°€ ê°€ìž¥ ë¹ ë¦„
 
-Á¤·Ä ¹®Á¦¹øÈ£
+ì •ë ¬ ë¬¸ì œë²ˆí˜¸
 10989 / Radix Counting
-11004 / K¹øÂ°¼ö
+11004 / Kë²ˆì§¸ìˆ˜
 
 Psudo Code
 

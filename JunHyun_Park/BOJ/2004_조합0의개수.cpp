@@ -1,4 +1,4 @@
-#include<cstdio>    // 2004_Á¶ÇÕ0ÀÇ°³¼ö [¼öÇĞ], [Á¶ÇÕ]
+#include<cstdio>    // 2004_ì¡°í•©0ì˜ê°œìˆ˜ [ìˆ˜í•™], [ì¡°í•©]
 #define min(x,y) x<y?x:y
 
 long long int f(int n){

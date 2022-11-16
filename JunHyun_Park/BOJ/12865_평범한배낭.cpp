@@ -1,4 +1,4 @@
-#include<cstdio>    // 12865_Æò¹üÇÑ¹è³¶ [DP]
+#include<cstdio>    // 12865 í‰ë²”í•œë°°ë‚­ [DP]
 #include<algorithm>
 using namespace std;
 #define max(x,y) x>y?x:y

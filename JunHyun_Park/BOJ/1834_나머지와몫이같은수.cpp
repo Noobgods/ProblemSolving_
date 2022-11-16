@@ -1,4 +1,4 @@
-#include<cstdio>	// 1834 ³ª¸ÓÁö¿Í¸òÀÌ°°Àº¼ö [¼öÇĞ] 
+#include<cstdio>	// 1834 ë‚˜ë¨¸ì§€ì™€ëª«ì´ê°™ì€ìˆ˜ [ìˆ˜í•™] 
 int main(){
 	int n;
 	unsigned long long int s=0;

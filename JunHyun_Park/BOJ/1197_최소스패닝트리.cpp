@@ -1,4 +1,4 @@
-#include <cstdio> // 1197_ÃÖ¼Ò½ºÆĞ´×Æ®¸® [ÃÖ¼Ò½ÅÀåÆ®¸®]
+#include <cstdio> // 1197_ìµœì†ŒìŠ¤íŒ¨ë‹íŠ¸ë¦¬ [ìµœì†Œì‹ ì¥íŠ¸ë¦¬]
 #include <algorithm>
 using namespace std;
 

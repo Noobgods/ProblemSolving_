@@ -1,4 +1,4 @@
-#include<cstdio>	// 9375_ÆĞ¼Ç¿Õ ½ÅÇØºó [ÀÚ·á±¸Á¶][Á¶ÇÕ]
+#include<cstdio>	// 9375_íŒ¨ì…˜ì™• ì‹ í•´ë¹ˆ [ìë£Œêµ¬ì¡°][ì¡°í•©]
 #include<cstring>
 struct clothes{
 	char type[21];

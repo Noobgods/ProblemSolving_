@@ -1,4 +1,4 @@
-#include<cstdio>  // 18258_ť2 [ť]
+#include<cstdio>  // 18258 큐2 [큐]
 #include<cstring>
 using namespace std;
 

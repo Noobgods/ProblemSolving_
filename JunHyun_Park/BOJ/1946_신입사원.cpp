@@ -1,4 +1,4 @@
-#include <cstdio>	// 1946_½ÅÀÔ»ç¿ø [±×¸®µğ]
+#include <cstdio>	// 1946_ì‹ ì…ì‚¬ì› [ê·¸ë¦¬ë””]
 #include <algorithm>
 #include <vector>
 

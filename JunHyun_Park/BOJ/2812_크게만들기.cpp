@@ -1,4 +1,4 @@
-#include<cstdio>	// 2812_е╘╟т╦╦╣И╠Б [╠в╦╝╣П] [╫╨ец]
+#include<cstdio>	// 2812_М│╛Й╡▄К╖▄К⌠╓Й╦╟ [Й╥╦К╕╛К■■] [Л┼╓М┐²]
 #include<stack>
 using namespace std;
 

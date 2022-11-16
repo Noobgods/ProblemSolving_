@@ -1,4 +1,4 @@
-#include<cstdio>    // 11051_ÀÌÇ×°è¼ö2 [¼öÇĞ], [DP]
+#include<cstdio>    // 11051_ì´í•­ê³„ìˆ˜2 [ìˆ˜í•™], [DP]
 unsigned long long int f[2][1001];
 int N, K;
 int main(){

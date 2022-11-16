@@ -1,4 +1,4 @@
-#include <cstdio>   //9935_¹®ÀÚ¿­Æø¹ß [½ºÅÃ]
+#include <cstdio>   //9935_ë¬¸ìì—´í­ë°œ [ìŠ¤íƒ]
 #include <stack>
 #include <iostream>
 using namespace std;

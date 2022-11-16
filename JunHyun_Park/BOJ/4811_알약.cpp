@@ -1,4 +1,4 @@
-#include <cstdio>   // 4811_¾Ë¾à [DP]
+#include <cstdio>   // 4811_ì•Œì•½ [DP]
 
 long long pill[32][31] = { {1,}, {1,1}};
 int main(){

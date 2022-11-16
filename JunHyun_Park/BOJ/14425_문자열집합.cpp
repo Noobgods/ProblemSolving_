@@ -1,4 +1,4 @@
-#include <cstdio>       // 14425_¹®ÀÚ¿­ÁıÇÕ [ÇØ½ÃÅ×ÀÌºí]
+#include <cstdio>       // 14425_ë¬¸ìì—´ì§‘í•© [í•´ì‹œí…Œì´ë¸”]
 #include <string>
 #include <unordered_set>
 using namespace std;

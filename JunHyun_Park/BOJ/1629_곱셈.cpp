@@ -1,4 +1,4 @@
-#include<cstdio> // 1629_°ö¼À [¼öÇÐ] [ºÐÇÒÁ¤º¹]
+#include<cstdio> // 1629_ê³±ì…ˆ [ìˆ˜í•™], [ë¶„í• ì •ë³µ]
 #include<cmath>
 int A, B, C;
 

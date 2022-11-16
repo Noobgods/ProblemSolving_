@@ -1,4 +1,4 @@
-#include<cstdio>    // 1026_º¸¹° [Á¤·Ä],[Å½»ö]
+#include<cstdio>    // 1026_ë³´ë¬¼ [ì •ë ¬],[íƒìƒ‰]
 #include<algorithm>
 using namespace std;
 

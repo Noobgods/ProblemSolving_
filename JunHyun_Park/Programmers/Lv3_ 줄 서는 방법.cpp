@@ -1,4 +1,4 @@
-#include <string>	// Level3_ ÁÙ ¼­´Â ¹æ¹ý [¼öÇÐ] [±¸Çö]
+#include <string>	// Level3_ ì¤„ ì„œëŠ” ë°©ë²• [ìˆ˜í•™] [êµ¬í˜„]
 #include <vector>
 #include <algorithm>
 
@@ -24,7 +24,7 @@ vector<int> solution(int n, long long k) {
     return answer;
 }
 
-// ÀÔÃâ·Â
+// ìž…ì¶œë ¥
 int main(){
 	int n;
 	long long k;

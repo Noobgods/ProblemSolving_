@@ -1,4 +1,4 @@
-#include<cstdio>    // 2610_ È¸ÀÇÁØºñ [Union-Find] [ÇÃ·ÎÀÌµå ¿ö¼È]
+#include<cstdio>    // 2610 íšŒì˜ì¤€ë¹„ [Union-Find], [í”Œë¡œì´ë“œ ì›Œì…œ]
 #include<algorithm>
 #include<vector>
 using namespace std;

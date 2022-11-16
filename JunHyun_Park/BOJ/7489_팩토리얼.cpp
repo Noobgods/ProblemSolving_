@@ -1,4 +1,4 @@
-#include<cstdio>    // 7489_ÆÑÅä¸®¾ó [¼öÇÐ]
+#include<cstdio>    // 7489_íŒ©í† ë¦¬ì–¼ [ìˆ˜í•™]
 
 int T;
 long long int N;

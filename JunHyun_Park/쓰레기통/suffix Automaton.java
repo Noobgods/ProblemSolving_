@@ -6,11 +6,11 @@ import java.util.List;
 public class SuffixAutomatonTest {
     public static void main(String[] args) {
 
-        // ¹®ÀÚ¿­ ÃÊ±âÈ­
+        // ë¬¸ìì—´ ì´ˆê¸°í™”
         String a = "aaabbaaba";
         String b = "ccbbac";
 
-        // °´Ã¼ »ı¼º
+        // ê°ì²´ ìƒì„±
         SuffixAutomatonTest sa = new SuffixAutomatonTest();
         System.out.println(sa.lcs(a, b));
     }
@@ -29,7 +29,7 @@ public class SuffixAutomatonTest {
         
         if (p == -1)  st[nlast].link = 0;
 
-        else { // Áßº¹µÈ ¹®ÀÚ Ã£±â
+        else { // ì¤‘ë³µëœ ë¬¸ì ì°¾ê¸°
             int q = st[p].next[c];
             if (st[p].length + 1 == st[q].length) st[nlast].link = q;
             else {
@@ -50,7 +50,7 @@ public class SuffixAutomatonTest {
     }
 
     public void buildSA(String s) {
-        int n = s.length(); // ½ºÆ®¸µ ±æÀÌ
+        int n = s.length(); // ìŠ¤íŠ¸ë§ ê¸¸ì´
         st = new State[Math.max(2, 2 * n - 1)]; // 
 
         st[0] = new State();

@@ -1,4 +1,4 @@
-#include<cstdio>	// 2748_ÀÌÄ£¼ö [DP]
+#include<cstdio>	// 2748_ì´ì¹œìˆ˜ [DP]
 int N;
 long long int R[100][2]={{1,1}};
 long long int pinary(int n, int r){

@@ -1,4 +1,4 @@
-#include<cstdio>	// 16360_GoLatin [¹®ÀÚ¿­Ã³¸®]
+#include<cstdio>	// 16360_GoLatin [ë¬¸ìì—´ì²˜ë¦¬]
 #include<cstring>
 char la[11][5]={"as", "ios", "ios", "les", "anes", "os", "res", "tas", "us", "ves", "was"};
 char en[11]={'a', 'i', 'y', 'l', 'n', 'o', 'r', 't', 'u', 'v', 'w'};

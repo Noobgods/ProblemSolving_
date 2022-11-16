@@ -1,4 +1,4 @@
-#include<cstdio>	// 1927_ÃÖ¼ÒÈü [¿ì¼±¼øÀ§Å¥]
+#include<cstdio>	// 1927_ìµœì†Œí™ [ìš°ì„ ìˆœìœ„í]
 #include<queue>
 using namespace std;
 

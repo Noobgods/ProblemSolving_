@@ -1,4 +1,4 @@
-#include <cstdio>   // 6588_°ñµå¹ÙÈåÀÇÃßÃø [¼Ò¼ö], [¿¡¶óÅä½ºÅ×³×½ºÀÇÃ¼]
+#include <cstdio>   // 6588_ê³¨ë“œë°”íì˜ì¶”ì¸¡ [ì†Œìˆ˜], [ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ì²´]
 bool prime[1000001] ={true, true};
 void eratos(int n){
     for(int i=2; i*i<=n; ++i)

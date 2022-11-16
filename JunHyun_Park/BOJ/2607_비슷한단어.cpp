@@ -1,4 +1,4 @@
-#include<cstdio>    // 2607_ºñ½ÁÇÑ´Ü¾î [¹®ÀÚ¿­ºñ±³]
+#include<cstdio>    // 2607_ë¹„ìŠ·í•œë‹¨ì–´ [ë¬¸ìì—´ë¹„êµ]
 #include<cstring>
 char S[101][11],N, R;
 int C[26], t[26];

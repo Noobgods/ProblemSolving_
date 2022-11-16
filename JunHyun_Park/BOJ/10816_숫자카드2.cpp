@@ -1,4 +1,4 @@
-#include<iostream> // 10816_¼ıÀÚÄ«µå [ÀÌºĞÅ½»ö]
+#include<iostream> // 10816_ìˆ«ìì¹´ë“œ [ì´ë¶„íƒìƒ‰]
 #include<cstdio>
 #include<array>
 #include<vector>
